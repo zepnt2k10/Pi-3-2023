@@ -1,0 +1,153 @@
+\thispagestyle{toancuabinone}
+\pagestyle{toancuabi}
+\everymath{\color{toancuabi}}
+%\blfootnote{$^1$\color{toancuabi}Đại học Thăng Long.}
+\graphicspath{{../toancuabi/pic/}}
+\begingroup
+\AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannertoancuabi}}}  
+\AddToShipoutPicture*{\put(85,525){\includegraphics[scale=1]{../tieude1.pdf}}} 
+\centering
+\endgroup
+
+\vspace*{182pt}
+
+\newpage
+\begingroup
+\thispagestyle{toancuabinone}
+\blfootnote{$^1$\color{toancuabi}Ottawa, Canada.}
+\AddToShipoutPicture*{\put(60,733){\includegraphics[width=17.2cm]{../mathc.pdf}}}
+%\AddToShipoutPicture*{\put(-2,733){\includegraphics[width=17.2cm]{../mathl.pdf}}} 
+\AddToShipoutPicture*{\put(125,675){\includegraphics[scale=1]{../tieude5.pdf}}} 
+\centering
+\endgroup
+\graphicspath{{../toancuabi/pic/}}
+\vspace*{33pt}
+
+\begin{multicols}{2}
+		In this article, we show a few example problems that can be solved when using the counting in two ways method.
+		\vskip 0.2cm
+		\PIbox{\textbf{\color{toancuabi}Example} (Sum of areas)\textbf{\color{toancuabi}.}
+			$ABCD$ is a parallelogram. $E$ and $F$ are points on $AB$ and $BC,$ respectively.
+			Lines $AF, CE, DE,$ and $DF$ dissect the parallelogram into $8$ regions,
+			where some of them have known areas, as shown below in the diagram.
+			\vskip 0.1cm
+			Find the sum of the areas $a+b+c.$}
+		\begin{figure}[H]
+			\centering
+			\vspace*{-5pt}
+			\captionsetup{labelformat= empty, justification=centering}
+			\includegraphics[width=1\linewidth]{hc-2022-2-2-6.pdf}
+			\vspace*{-10pt}
+		\end{figure}
+		\textit{Solution.}
+		From the properties of the parallelogram $ABCD,$ the following triangle pairs, with the same base and height, have the same area
+		\begin{align*}
+			\left.
+			\begin{aligned}
+				[AFB] = [DFB]\\
+				[CEB] = [DEB]
+			\end{aligned}
+			\right\}
+			\Rightarrow& [AFB] + [CEB] \\
+			&= [DFB] + [DEB] \\
+			&= [DEBF]
+		\end{align*}
+		Therefore
+		\begin{align*}
+			&(a + 47 + b) + (c + 32 + b)\\
+			= \,&(323 + 47 + b + 32)\\
+			\Rightarrow\, &a + b + c = 323.
+		\end{align*}
+		\vspace*{0.1pt}
+		
+		\vspace*{-6pt}
+		\PIbox{\textbf{\color{toancuabi}Example} (How many knights are needed to protect King Anthony?)\textbf{\color{toancuabi}.}
+			King Anthony went for hunting trip with his knights.
+			At night, they stayed in one of the king's hunting lodges in the forest.
+			In this house, there are nine rooms. The king slept in the central room.
+			The knights stayed in the eight surrounding rooms such that
+			in each direction north, south, east, west the total number of knights 
+			in the \textit{three rooms} facing that direction should always be \textit{nine}.
+			\textit{For example, the diagram below shows a possible case with each room has 3 knights.
+			The letter $K$ indicates the King staying in the central room.}
+			\begin{table}[H]
+				\vspace*{-5pt}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+				\renewcommand{\arraystretch}{1.2}
+				\begin{tabular}{|c|c|c|}
+					\hline
+					$3$ & $3$    & $3$ \\ \hline
+					$3$ & K & $3$ \\ \hline
+					$3$ & $3$    & $3$ \\ \hline
+				\end{tabular}
+				\vspace*{-5pt}
+			\end{table}
+			What would be the smallest number of knights were with the king?
+			What would be the largest?}
+		\vskip 0.1cm
+		\textit{Solution.}
+			Let $a_1,a_2,a_3,a_4,b_1,b_2,b_3,$ and $b_4$ be the numbers of knights in each room as shown in the diagram.
+			Let $S=a_1+a_2+a_3+a_4+b_1+b_2+b_3+b_4,$ then
+			\begin{align*}
+				&36 = (a_1\!+\!b_1\!+\!a_2)\!+\!(a_2\!+\!b_2\!+\!a_3)\\
+				&\quad\quad\!+\!(a_3\!+\!b_4\!+\!a_4)\!+\!(a_4\!+\!b_4\!+\!a_1)\\
+				\Rightarrow&
+				\begin{cases}
+					S = 36 - (a_1+a_2+a_3+a_4)\\
+					S = \frac{1}{2}\left(36 + (b_1+b_2+b_3+b_4)\right)
+				\end{cases}
+			\end{align*}
+			\begin{table}[H]
+				\vspace*{-5pt}
+				\centering
+				\captionsetup{labelformat= empty, justification=centering}
+				\begin{tabular}{|c|c|c|}
+					\hline
+					$a_1$ & $b_1$ & $a_2$ \\ \hline
+					$b_4$ & K & $b_2$ \\ \hline
+					$a_4$ & $b_3$ & $a_3$ \\ \hline
+				\end{tabular}
+				\caption{\small\textit{\color{toancuabi}With variables}}
+				\vspace*{-10pt}
+			\end{table}
+			Thus, the least value of $S$ is $18$, if $b_1=b_2=b_3=b_4=0,$ and $a_1=a_3=5,a_2=a_4=4.$
+			The most value of $S$ is $36$, if $a_1=a_2=a_3=a_4=0,$ and $b_1=b_2=b_3=b_4=9.$
+		\vskip 0.2cm
+		\PIbox{\textbf{\color{toancuabi}Example} (What are the family names of the sisters?)\textbf{\color{toancuabi}.}
+			Four pairs of brother--sister share $32$ cookies.
+			For the sisters, Lan got one, Mai got two, Na got three, and Quynh got four cookies.
+			Danny Tran took as many as his sister, Elvin Nguyen twice as many as his sister,
+			Franklin Pham three times as his sister, and Williams Quach four times as many as his sister.
+			\vskip 0.1cm
+			What are the family names of the girls?}
+		\vskip 0.2cm
+		\textit{Solution.}
+			Let $x, 2y, 3z,$ and $4w$ be the numbers of cookies that 
+			Danny Tran, Elvin Nguyen, Franklin Pham, and Williams Quach took.
+			Their sisters took $x, y, z,$ and $w$ cookies respectively. Therefore,
+			\begin{align*}
+				&x + 2y + 3z + 4w + x + y + z + w = 32\\
+				\Rightarrow &2x + 3y + 4z + 5w = 32.
+			\end{align*}
+			Note that $x, y, z, w$ are a permutation of $1,2,3,4,$ so $x + y + z + w = 10.$
+			Thus 
+			\begin{align*}
+				&-x + z + 2w \!=\! 32-3(x + y + z + w) \!=\! 2 \\
+				\Rightarrow \,&x > z, x \text{\ and\ } z \text{\ have the same parity}\\
+				\Rightarrow\,&-x+z=-2 \Rightarrow  w=2 \\
+				\Rightarrow \,&x=3, z=1, y=4. 
+			\end{align*}
+			Now, Lan got one, Mai got two, Na got three, and Quynh got four cookies.
+			\vskip 0.1cm
+			$x=3,$ so the girl who took three cookies, Na, is the sister of Danny Tran, so she is Na Tran.
+			\vskip 0.1cm
+			$y=4,$ so the girl who took four cookies, Quynh, is the sister of Elvin Nguyen, so she is Quynh Nguyen.
+			\vskip 0.1cm
+			$z=1,$ so the girl who took one cookie, Lan, is the sister of Franklin Pham, so she is Lan Pham.
+			\vskip 0.1cm
+			$w=2,$ so the girl who took two cookies, Mai, is the sister of Williams Quach, so she is Mai Quach.
+			\vskip 0.1cm
+			Hence, the girls's names are Na Tran, Quynh Nguyen, Lan Pham, and Mai Quach.
+\end{multicols}
+	
