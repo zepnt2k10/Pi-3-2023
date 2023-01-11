@@ -22,7 +22,9 @@
 	\vskip 0.1cm
 	\textit{Giải:} Bỏ đi $\dfrac{1}{9}$ trong đường kính, cụ thể là $1$, còn $8$. Nhân $8$ với $8$, diện tích của nó là $64$.
 	\vskip 0.1cm 
-	Bài toán này cho thấy, người Ai Cập cổ đại đã tính diện tích  $S$ của hình tròn có đường kính $d$ bằng diện tích hình vuông có cạnh bằng $\dfrac{8}{9}d$:  
+	Bài toán này cho thấy, người Ai Cập cổ đại đã tính diện tích  $S$ của hình tròn có đường kính $d$ bằng diện tích hình vuông có cạnh bằng $\dfrac{8}{9}d$: 
+	\setlength{\abovedisplayskip}{5pt}
+	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
 		S = {\left( {d - \dfrac{1}{9}d} \right)^2} = {\left( {\dfrac{8}{9}d} \right)^2} = \dfrac{{64}}{{81}}{d^2}.
 	\end{align*}
@@ -32,11 +34,39 @@
 	\end{align*}
 	Sai số của số này so với  $\pi  \approx 3.14156$ là gần $2\%$ và có phân số xấp xỉ là $3\dfrac{1}{7} = \dfrac{{22}}{7} \approx 3.14286$.
 	\vskip 0.1cm 
-	Giả sử cắt bốn góc của hình vuông cạnh $9$ \textit{khet} (đơn vị dài) bốn tam giác vuông cân có cạnh bằng $3$ \textit{khet}. Khi ấy diện tích bát giác còn lại gần bằng diện tích hình tròn (hình tròn có phần nằm trong, cũng có phần nằm ngoài bát giác, Hình $1$). Ta có ${S_{{\rm{batgiac}}}} = {9^2} - 4.\dfrac{{{3^2}}}{2} = 63.$   
+	Giả sử cắt bốn góc của hình vuông cạnh $9$ \textit{khet} (đơn vị dài) bốn tam giác vuông cân có cạnh bằng $3$ \textit{khet}. Khi ấy diện tích bát giác còn lại gần bằng diện tích hình tròn (hình tròn có phần nằm trong, cũng có phần nằm ngoài bát giác, Hình $1$). Ta có ${S_{{\text{bát giác}}}} = {9^2} - 4.\dfrac{{{3^2}}}{2} = 63.$   
 	Giá trị này gần với giá trị  $S = {\left( {\dfrac{8}{9}d} \right)^2} = 64$ khi cho $d = 9$  là cơ sở để giải thích công thức tính diện tích hình tròn $S = \dfrac{{64}}{{81}}{d^2}$  của người Babylon.	 
-	
-%	Hình$ 1$
-
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc, scale=0.6]
+			\draw  (0.,0.) circle (3.cm);
+			\draw  (-3.,-3.)-- (3.,-3.);
+			\draw  (3.,-3.)-- (3.,3.);
+			\draw  (3.,3.)-- (-3.,3.);
+			\draw  (-3.,3.)-- (-3.,-3.);
+			\draw  (1.,3.)-- (3.,1.);
+			\draw  (3.,-1.)-- (1.,-3.);
+			\draw  (-1.,-3.)-- (-3.,-1.);
+			\draw  (-3.,1.)-- (-1.,3.);
+				\draw [fill=white] (3.,0.) circle (1.5pt);
+				\draw [fill=white] (-3.,-3.) circle (1.5pt);
+				\draw [fill=white] (3.,-3.) circle (1.5pt);
+				\draw [fill=white] (3.,3.) circle (1.5pt);
+				\draw [fill=white] (-3.,3.) circle (1.5pt);
+				\draw [fill=white] (1.,3.) circle (1.5pt);
+				\draw [fill=white] (3.,1.) circle (1.5pt);
+				\draw [fill=white] (3.,-1.) circle (1.5pt);
+				\draw [fill=white] (1.,-3.) circle (1.5pt);
+				\draw [fill=white] (-1.,-3.) circle (1.5pt);
+				\draw [fill=white] (-3.,-1.) circle (1.5pt);
+				\draw [fill=white] (-3.,1.) circle (1.5pt);
+				\draw [fill=white] (-1.,3.) circle (1.5pt);
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $1$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Trong bài toán khắc trên bảng đồng của người Babylon, số $\pi$  được chọn bằng $\dfrac{{25}}{8} = 3.125$.
 	\vskip 0.1cm   
 	Khi đo đạc tháp Gira vĩ đại ($2500$ trước Công nguyên), các nhà khảo cổ học đã nhận thấy người Ai Cập chọn số $\pi$  bằng $\dfrac{{22}}{7} \approx 3.14$.
@@ -53,24 +83,55 @@
 	\vskip 0.1cm
 	Giả sử $p_n$  và  $P_n$ là chu vi các đa giác đều $n$  cạnh nội tiếp và ngoại tiếp đường tròn chu vi $C$.  Khi ấy ta có 
 	\begin{align*}
-		\begin{array}{l}
-			{p_6} < {p_{12}} < {p_{24}} < {p_{48}} < {\rm{ }}{p_{96}} < ... < {p_n} < ... < C < \\
-			... < {P_n} < ... < {P_{96}} < {P_{48}} < {P_{24}} < {P_{12}} < {P_6}.
-		\end{array}
+		{p_6} &< {p_{12}} < {p_{24}} < {p_{48}} < {\rm{ }}{p_{96}} < ... < {p_n} \\
+		&< ... < C < ... < {P_n} < ... < {P_{96}} < {P_{48}} \\
+		&< {P_{24}} < {P_{12}} < {P_6}.
 	\end{align*}
 	Dãy số $\{p_n\}$  là dãy số tăng, bị chặn trên bởi $C$  và $\{P_n\}$  là dãy số giảm bị chặn dưới bởi $C$.  Do đó chúng có giới hạn và có thể chứng minh giới hạn chung của chúng là  $C$.
 	\vskip 0.1cm
 	Giả sử  $Z$ là tâm hình tròn, và $AB = 2t$  và $CD = 2s$   tương ứng là độ dài một cạnh của đa giác đều $n$  cạnh ngoại tiếp và nội tiếp hình tròn. Gọi $M$  là điểm giữa của $AB$, $N$ là điểm giữa của  $CD$ và $O$  là giao điểm của tiếp tuyến tại điểm  $C$ với $MA$  (Hình $2$). Tương ứng $OM = OC = t'$  là nửa cạnh của đa giác đều $2n$  cạnh ngoại tiếp và $MC = MD = 2s'$ là cạnh của đa giác đều $2n$ cạnh nội tiếp đường tròn.     
-	
-%	Hình $2$
-
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc,scale=1.3,node font= \small]
+			\draw  (-1.414213562373095,-1.4142135623730954)-- (1.414213562373095,-1.414213562373095);
+			\draw [shift={(0.,0.)},]  plot[domain=3.9269908169872414:5.497787143782138,variable=\t]({1.*2.*cos(\t r)+0.*2.*sin(\t r)},{0.*2.*cos(\t r)+1.*2.*sin(\t r)});
+			\draw  (0.,0.)-- (-2.,-2.);
+			\draw  (-2.,-2.)-- (2.,-2.);
+			\draw  (2.,-2.)-- (0.,0.);
+			\draw  (-1.414213562373095,-1.4142135623730954)-- (4.214684851089403E-8,-2.);
+			\draw  (4.214684851089403E-8,-2.)-- (1.4142135623730958,-1.414213562373095);
+			\draw  (0.8284271247461907,-2.)-- (1.4142135623730958,-1.414213562373095);
+			\draw  (0.,0.)-- (4.214684851089403E-8,-2.);
+				\draw [fill=white] (-2.,-2.) circle (0.8pt);
+				\draw (-2.1070556519764487,-2.185112519201409) node {$B$};
+				\draw [fill=white] (2.,-2.) circle (0.8pt);
+				\draw (2.0884264234624923,-2.185112519201409) node {$A$};
+				\draw [fill=white] (0.,0.) circle (0.8pt);
+				\draw (0.01383926033153683,0.19322874030847648) node {$Z$};
+				\draw [fill=white] (4.214684851089403E-8,-2.) circle (0.8pt);
+				\draw (-0.02320693901008737,-2.1897168707627) node {$M$};
+				\draw [fill=white] (0.,-1.4142135623730951) circle (0.8pt);
+				\draw (0.15940855934397314,-1.2608345838502717) node {$N$};
+				\draw [fill=white] (-1.414213562373095,-1.4142135623730954) circle (0.8pt);
+				\draw (-1.5328395621812736,-1.2793576835210838) node {$D$};
+				\draw [fill=white] (1.4142135623730958,-1.414213562373095) circle (0.8pt);
+				\draw (1.477164134325693,-1.2608345838502717) node {$C$};
+				\draw [fill=white] (1.414213562373096,-1.414213562373095) circle (0.8pt);
+				\draw [fill=white] (0.8284271247461907,-2.) circle (0.8pt);
+				\draw (0.8195940960118633,-2.194374069036815) node {$O$};
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $2$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Vì $ACO$  và $AMZ$ là các tam giác vuông đồng dạng nên  $\dfrac{{t'}}{{t - t'}} = \dfrac{{OC}}{{OA}} = \dfrac{{ZM}}{{ZA}}.$
 	\vskip 0.1cm
 	Theo Định lý Thales ta có  $\dfrac{s}{t} = \dfrac{{NC}}{{MA}} = \dfrac{{CZ}}{{AZ}}.$
 	\vskip 0.1cm
 	Vì $MZ \in CZ$ nên ta có 
 	\begin{align*}
-		\dfrac{{t'}}{{t - t'}} = \dfrac{s}{t} \text{ hay } t' = \dfrac{{ts}}{{t + s}}.
+		\dfrac{{t'}}{{t - t'}} = \dfrac{s}{t} \text{\color{black}\,\, hay } t' = \dfrac{{ts}}{{t + s}}.
 	\end{align*}
 	Vì các tam giác cân $CMD$  và  $COM$ là đồng dạng, nên ta có $\dfrac{{2s'}}{{2s}} = \dfrac{{t'}}{{2s'}},$  nghĩa là  $2{s'^2} = st'.$
 	\vskip 0.1cm
@@ -78,11 +139,13 @@
 	\vskip 0.1cm
 	Vậy $P_{2n}$   là trung bình điều hòa của  $p_n$ và $P_n$:
 	\begin{align*}
-		{P_{2n}} = 2nt' = \dfrac{{2nts}}{{t + s}} = \dfrac{{2nt \cdot 2ns}}{{2nt + 2ns}} = \dfrac{{{p_n} \cdot {P_n}}}{{{p_n} + {P_n}}}. \tag{$2$}
+		{P_{2n}} = 2nt' &= \dfrac{{2nts}}{{t + s}} = \dfrac{{2nt \cdot 2ns}}{{2nt + 2ns}} \\
+		&= \dfrac{{{p_n} \cdot {P_n}}}{{{p_n} + {P_n}}}. \tag{$2$}
 	\end{align*}
 	Và $p_{2n}$ là trung bình nhân của $p_n$  và $P_{2n}$:  
 	\begin{align*}
-		{p_{2n}} = 2ns' = 2n\sqrt {s \cdot t'}  = \sqrt {2ns \cdot 2nt'}  = \sqrt {{p_n} \cdot {P_{2n}}} . \tag{$3$}
+		{p_{2n}} = 2ns' &= 2n\sqrt {s \cdot t'}  = \sqrt {2ns \cdot 2nt'}  \\
+		&= \sqrt {{p_n} \cdot {P_{2n}}} . \tag{$3$}
 	\end{align*}
 	Bắt đầu từ $n = 6$: $p_6 = 3d$ và $P_6 = 2\sqrt{3}d$,  trong đó $d$  là đường kính hình tròn, nhờ các công thức truy hồi ($2$) và ($3$), ta tìm được  $p_{96}$ và  $P_{96}$. Sử dụng đánh giá $\dfrac{{265}}{{153}}{\rm{ }} < \sqrt 3  < \dfrac{{1351}}{{780}}$,   Archimetdes tìm được tỷ số giữa chu vi đa giác đều $96$ cạnh và đường kính của hình tròn nội tiếp là 
 	\begin{align*}
@@ -97,10 +160,32 @@
 	Ta cũng có thể tính toán cách khác như sau.
 	\vskip 0.1cm
 	Giả sử đường tròn tâm $O$  có bán kính bằng $1$. $AB$  là một cạnh của hình đa giác đều $n$  cạnh nội tiếp đường tròn, có độ dài là $s_n$. Trong tam giác $OAB,$ kẻ $OC$  vuông góc với $AB$ cắt đường tròn tại  $D$. Suy ra $AD$ và $BD$  là hai cạnh của đa giác đều  $2n$ cạnh, có độ dài là  ${s_{2n}}$  (Hình $3$).
-	
-	%%%
-	Hình $3$
-	
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc,scale=0.9]
+			\draw  (0.,0.) circle (2.cm);
+			\draw  (-1.414213562373095,1.4142135623730954)-- (1.4142135623730954,1.4142135623730945);
+			\draw  (-1.414213562373095,1.4142135623730954)-- (0.,0.);
+			\draw  (0.,0.)-- (1.4142135623730954,1.4142135623730945);
+			\draw  (0.,0.)-- (0.,2.);
+			\draw  (0.,2.)-- (-1.414213562373095,1.4142135623730954);
+			\draw  (0.,2.)-- (1.4142135623730954,1.4142135623730945);
+			\draw [fill=white] (0.,0.) circle (1.5pt);
+			\draw (0.046257928118391335,-0.21959254276378817) node {$O$};
+			\draw [fill=white] (-1.414213562373095,1.4142135623730954) circle (1.5pt);
+			\draw (-1.6467653276955618,1.696686527003653) node {$A$};
+			\draw [fill=white] (1.4142135623730954,1.4142135623730945) circle (1.5pt);
+			\draw (1.5532346723044377,1.7152911781664437) node {$B$};
+			\draw [fill=white] (0.,1.414213562373095) circle (1.5pt);
+			\draw (0.19509513742071688,1.2873842014222578) node {$C$};
+			\draw [fill=white] (0.,2.) circle (1.5pt);
+			\draw (-0.00955602536998075,2.3850586200269084) node {$D$};
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $3$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Áp dụng định lý Pythagoras vào tam giác vuông $ACD$  ta có
 	\begin{align*}
 		A{D^2} = A{C^2} + C{D^2} = A{C^2} + {(OD - OC)^2}).
@@ -115,8 +200,8 @@
 	\end{align*}
 	Với  $OA = OD = 1,\;AC = \dfrac{{{s_n}}}{2},\;AD = {s_{2n}},$ ta có
 	\begin{align*}
-		s_{2n}^2 = {\left( {\dfrac{{{s_n}}}{2}} \right)^2} + {\left( {1 - \sqrt {1 - {{\left( {\dfrac{{{s_n}}}{2}} \right)}^2}} } \right)^2}\\
-		\Leftrightarrow s_{2n}^2 = 2 - \sqrt {4 - s_n^2}.
+		&s_{2n}^2 = {\left( {\dfrac{{{s_n}}}{2}} \right)^2} + {\left( {1 - \sqrt {1 - {{\left( {\dfrac{{{s_n}}}{2}} \right)}^2}} } \right)^2}\\
+		\Leftrightarrow &s_{2n}^2 = 2 - \sqrt {4 - s_n^2}.
 	\end{align*}
 	Suy ra 
 	\begin{align*}
@@ -128,7 +213,8 @@
 	\end{align*}
 	Gấp đôi số cạnh được $n= 12$ thì 
 	\begin{align*}
-		{s_{24}} = \sqrt {2 - \sqrt {4 - (2 - \sqrt 3 )} }  = \sqrt {2 - \sqrt {2 + \sqrt 3 } } .
+		{s_{24}} &= \sqrt {2 - \sqrt {4 - (2 - \sqrt 3 )} }  \\
+		&= \sqrt {2 - \sqrt {2 + \sqrt 3 } } .
 	\end{align*}
 	Tiếp tục với $n = 24$  thì 
 	\begin{align*}
@@ -138,12 +224,60 @@
 	\begin{align*}
 		{s_{96}} = \sqrt {2 - \sqrt {2 + \sqrt {2 + \sqrt {2 + \sqrt 3 } } } } .
 	\end{align*}
-	%%
-	Hình $4$
-	\vskip 0.1cm
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc,scale=0.67]
+			\draw  (0.,0.) circle (3.cm);
+			\draw  (-1.5,2.5980762113533165)-- (1.5,2.5980762113533165);
+			\draw  (1.5,2.5980762113533165)-- (3.,0.);
+			\draw  (3.,0.)-- (1.5,-2.5980762113533165);
+			\draw  (1.5,-2.5980762113533165)-- (-1.5,-2.5980762113533165);
+			\draw  (-1.5,-2.5980762113533165)-- (-3.,0.);
+			\draw  (-3.,0.)-- (-1.5,2.5980762113533165);
+			\draw  (0.,0.)-- (1.5,2.5980762113533165);
+			\draw  (-1.5,2.5980762113533165)-- (0.,0.);
+			\draw  (-1.5,2.5980762113533165)-- (0.,3.);
+			\draw  (0.,3.)-- (-1.5,2.5980762113533165);
+			\draw  (-1.5,2.5980762113533165)-- (-2.598076211353315,1.5);
+			\draw  (-2.598076211353315,1.5)-- (-3.,0.);
+			\draw  (-3.,0.)-- (-2.5980762113533165,-1.5);
+			\draw  (-2.5980762113533165,-1.5)-- (-1.5,-2.5980762113533133);
+			\draw  (-1.5,-2.5980762113533133)-- (0.,-3.);
+			\draw  (0.,-3.)-- (1.5,-2.598076211353315);
+			\draw  (1.5,-2.598076211353315)-- (2.598076211353314,-1.5);
+			\draw  (2.598076211353314,-1.5)-- (3.,0.);
+			\draw  (3.,0.)-- (2.5980762113533165,1.5);
+			\draw  (2.5980762113533165,1.5)-- (1.5,2.5980762113533147);
+			\draw  (1.5,2.5980762113533147)-- (0.,3.);
+				\draw [fill=white] (0.,0.) circle (1.5pt);
+				\draw [fill=white] (3.,0.) circle (1.5pt);
+				\draw [fill=white] (-3.,0.) circle (1.5pt);
+				\draw [fill=white] (-1.5,-2.5980762113533165) circle (1.5pt);
+				\draw [fill=white] (1.5,2.5980762113533165) circle (1.5pt);
+				\draw [fill=white] (-1.5,2.5980762113533165) circle (1.5pt);
+				\draw [fill=white] (1.5,-2.5980762113533165) circle (1.5pt);
+				\draw [fill=white] (0.,3.) circle (1.5pt);
+				\draw [fill=white] (-2.598076211353315,1.5) circle (1.5pt);
+				\draw [fill=white] (-3.,0.) circle (1.5pt);
+				\draw [fill=white] (-2.5980762113533165,-1.5) circle (1.5pt);
+				\draw [fill=white] (-1.5,-2.5980762113533133) circle (1.5pt);
+				\draw [fill=white] (0.,-3.) circle (1.5pt);
+				\draw [fill=white] (1.5,-2.598076211353315) circle (1.5pt);
+				\draw [fill=white] (2.598076211353314,-1.5) circle (1.5pt);
+				\draw [fill=white] (3.,0.) circle (1.5pt);
+				\draw [fill=white] (2.5980762113533165,1.5) circle (1.5pt);
+				\draw [fill=white] (1.5,2.5980762113533147) circle (1.5pt);
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $4$.}}
+		\vspace*{-5pt}
+	\end{figure}
 	Chu vi của đa giác đều $96$ cạnh bằng
 	\begin{align*}
-		96.\dfrac{{{s_{96}}}}{2} = 48.{s_{96}} = 48\sqrt {2 - \sqrt {2 + \sqrt {2 + \sqrt {2 + \sqrt 3 } } } }  \approx 3,14103 \approx 3\dfrac{{10}}{{71}}.
+		&96\cdot\dfrac{{{s_{96}}}}{2} \\
+		= \,\,&48\cdot{s_{96}} = 48\sqrt {2 \!-\! \sqrt {2 \!+\! \sqrt {2 \!+\! \sqrt {2 \!+\! \sqrt 3 } } } }  \\
+		\approx\,\, &3,14103 \approx 3\dfrac{{10}}{{71}}.
 	\end{align*}
 	Tương tự cho đa giác đều ngoại tiếp, ta có 
 	\begin{align*}
@@ -155,15 +289,36 @@
 	\end{align*}
 	Áp dụng định lý Pythagoras cho tam giác vuông $OAC$ ta có
 	\begin{align*}
-		O{A^2} = O{C^2} + A{C^2} \Leftrightarrow S_6^2 = {1^2} + {(\dfrac{{{S_6}}}{2})^2} \Leftrightarrow {S_6} = \dfrac{{2\sqrt 3 }}{3}.
+		O{A^2} = O{C^2} + A{C^2} &\Leftrightarrow S_6^2 = {1^2} + {(\dfrac{{{S_6}}}{2})^2} \\
+		&\Leftrightarrow {S_6} = \dfrac{{2\sqrt 3 }}{3}.
 	\end{align*}
 	Theo ($5$) ta sẽ tính được ${S_{12}},{S_{24}},{S_{48}},{S_{96.}}$.
 	Chu vi của đa giác đều $96$ cạnh là  
 	\begin{align*}
 		96.\dfrac{{{S_{96}}}}{2} \approx 3,14271 \approx 3\dfrac{{10}}{{70}}.
 	\end{align*}
-
-	%	Hình $5$
+	\begin{figure}[H]
+		\vspace*{-10pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc,scale=0.9]
+			\draw  (0.,0.) circle (2.cm);
+			\draw  (-2.,2.)-- (0.,0.);
+			\draw  (0.,0.)-- (2.,2.);
+			\draw  (-2.,2.)-- (2.,2.);
+			\draw  (0.,2.)-- (0.,0.);
+			\draw [fill=white] (0.,0.) circle (1.5pt);
+			\draw (0.009048625792809947,-0.20098789160099748) node {$O$};
+			\draw [fill=white] (2.,2.) circle (1.5pt);
+			\draw (2.129978858350949,2.347849317701327) node {$B$};
+			\draw [fill=white] (-2.,2.) circle (1.5pt);
+			\draw (-2.093276955602539,2.347849317701327) node {$A$};
+			\draw [fill=white] (0.,2.) circle (1.5pt);
+			\draw (0.1392811839323448,2.3106400153757454) node {$C$};
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $5$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Vì hình tròn bị giới hạn bới các đa giác đều nội tiếp và ngoại tiếp, nên ($1$) được chứng minh.
 	Trong \textit{Plinthides and Cylinders}, Archimedes còn tính số Pi: 
 	\begin{align*}
@@ -228,9 +383,33 @@
 	\textit{Giải thích}. Đây là phép tính chu vi đường tròn bắt đầu bằng hình vuông nội và ngoại tiếp, sau đó gấp đôi số cạnh (phương pháp của Liu Hui). 
 	Gọi $d$ là đường kính hình tròn, bán kính $r = \dfrac{d}{2}$. Chu vi hình vuông ngoại tiếp bằng $4d > \pi d = 3,14d$
 	(cạnh hình vuông bằng đường kính). 	
-	
-	Hình $6$
-	
+	\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\begin{tikzpicture}[lichsutoanhoc,scale=0.8]
+			\draw  (0.,0.) circle (2.cm);
+			\draw  (-2.,-2.)-- (2.,-2.);
+			\draw  (2.,-2.)-- (2.,2.);
+			\draw  (2.,2.)-- (-2.,2.);
+			\draw  (-2.,2.)-- (-2.,-2.);
+			\draw  (-1.414213562373095,-1.4142135623730954)-- (1.414213562373095,-1.414213562373095);
+			\draw  (-1.414213562373095,1.4142135623730954)-- (-1.414213562373095,-1.4142135623730954);
+			\draw  (-1.414213562373095,1.4142135623730954)-- (1.4142135623730954,1.4142135623730945);
+			\draw  (1.4142135623730954,1.4142135623730945)-- (1.414213562373095,-1.414213562373095);
+				\draw [fill=white] (0.,0.) circle (1.5pt);
+				\draw [fill=white] (-2.,-2.) circle (1.5pt);
+				\draw [fill=white] (2.,-2.) circle (1.5pt);
+				\draw [fill=white] (2.,2.) circle (1.5pt);
+				\draw [fill=white] (-2.,2.) circle (1.5pt);
+				\draw [fill=white] (-1.414213562373095,1.4142135623730954) circle (1.5pt);
+				\draw [fill=white] (1.4142135623730954,1.4142135623730945) circle (1.5pt);
+				\draw [fill=white] (-1.414213562373095,-1.4142135623730954) circle (1.5pt);
+				\draw [fill=white] (1.414213562373095,-1.414213562373095) circle (1.5pt);
+		\end{tikzpicture}
+		\caption{\small\textit{\color{lichsutoanhoc}Hình $6$.}}
+		\vspace*{-10pt}
+	\end{figure}
 	Hình vuông nội tiếp đường tròn có đường chéo bằng cạnh hình vuông bằng $\dfrac{d}{{\sqrt 2 }} = r\sqrt 2 .$ Do đó  chu vi hình vuông nội tiếp bằng (Hình $6$): $4r\; = 2d\; \approx 2d \times 1,4142 \approx 2,8284 < d\pi  \approx d.3,14 < 4d$.
 	Gấp đôi số cạnh đa giác nội ngoại tiếp và tính giới hạn ta được chu vi hình tròn.
 	Nguyễn Hữu Thận cũng phát biểu
@@ -243,9 +422,12 @@
 	\vskip 0.1cm 
 	\textit{Giải thích}. Chu vi hình tròn bằng:
 	\begin{align*}
-		p = d\pi  \approx 7 \times 3.14159265 \approx 21.99114855 < 22;\\
-		p = d\pi  \approx 50 \times 3.14159265 \approx 157.0796325 > 157.\\
-		d\pi  \approx 113 \times 3.14159265 \approx 354.99996945 < 355.
+		p = d\pi  &\approx 7 \times 3.14159265 \\
+		&\approx 21.99114855 < 22;\\
+		p = d\pi  &\approx 50 \times 3.14159265 \\
+		&\approx 157.0796325 > 157.\\
+		d\pi  &\approx 113 \times 3.14159265 \\
+		&\approx 354.99996945 < 355.
 	\end{align*}
 	Sai số:
 	\vskip 0.1cm 		
@@ -271,13 +453,16 @@
 	Diện tích hình vuông: $127323954$.
 	\vskip 0.1cm
 	\textit{Giải thích} Với cạnh $a = 10000$ thì diện tích hình vuông ${a^2} = 1.0000.0000$. Diện tích hình tròn nội tiếp hình vuông có đường kính bằng cạnh hình vuông, do đó 
+	\setlength{\abovedisplayskip}{7pt}
+	\setlength{\belowdisplayskip}{7pt}
 	\begin{align*}
-			S = \pi {R^2} = \dfrac{{\pi {d^2}}}{4} = \dfrac{{\pi {a^2}}}{4}\\
-			\approx 3.14159265 \times 1.0000.0000:4 \approx 78539816.	
+			S &= \pi {R^2} = \dfrac{{\pi {d^2}}}{4} = \dfrac{{\pi {a^2}}}{4}\\
+			&\approx 3.14159265 \times 1.0000.0000:4 \\
+			&\approx 78539816.	
 	\end{align*}
 	Nếu diện tích hình tròn là $100000000$ thì diện tích hình vuông là
 	\begin{align*}
-		{a^2} = \dfrac{{4S}}{\pi } = \dfrac{{4 \times 100000000}}{{3.14159265}} = 127323954.
+		{a^2} &= \dfrac{{4S}}{\pi } = \dfrac{{4 \times 100000000}}{{3.14159265}}\\ &= 127323954.
 	\end{align*}
 	Nguyễn Hữu Thận viết:  \textit{Diện tích hình vuông và diện tích hình tròn bằng nhau, cạnh hình vuông và đường kính hình tròn không cùng định luật.}
 	\vskip 0.1cm
@@ -293,10 +478,9 @@
 	\vskip 0.1cm
 	\textit{Giải thích}. Diện tích hình vuông bằng diện tích hình tròn và bằng 
 	\begin{align*}
-		\begin{array}{l}
-			S = \pi {R^2} = \dfrac{{\pi {d^2}}}{4}\\
-			\approx 3.14159265 \times {1.0000.0000^2}:4 \approx 7853981633974483.
-		\end{array}
+		S &= \pi {R^2} = \dfrac{{\pi {d^2}}}{4}\\
+		&\approx 3.14159265 \times {1.0000.0000^2}:4 \\
+		&\approx 7853981633974483.
 	\end{align*}
 	Cạnh $a$ của hình vuông bằng
 	\begin{align*}
@@ -304,7 +488,9 @@
 	\end{align*}
 	Tương tự, nếu có cạnh hình vuông bằng $100000000$ thì  
 	\begin{align*}
-		d = \sqrt {\dfrac{{4S}}{\pi }}  = \sqrt {\dfrac{{4{a^2}}}{\pi }}  = \dfrac{{2a}}{{\sqrt \pi  }} \approx \dfrac{{2 \times 100000000}}{{\sqrt {3.14159265} }} \approx 112837916.
+		d &= \sqrt {\dfrac{{4S}}{\pi }}  = \sqrt {\dfrac{{4{a^2}}}{\pi }}  = \dfrac{{2a}}{{\sqrt \pi  }} \\
+		&\approx \dfrac{{2 \times 100000000}}{{\sqrt {3.14159265} }} \\
+		&\approx 112837916.
 	\end{align*}
 	Như vậy, có thể khẳng định, Nguyễn Hữu Thận ($1757-1831$) là người Việt Nam đầu tiên có cảm nhận toán học về số vô tỷ và giới hạn thông qua quan hệ giữa số $\pi$ và diện tích các đa giác đều nội ngoại tiếp hình tròn khi gấp đôi số cạnh.
 	\vskip 0.1cm
@@ -320,13 +506,14 @@
 	\vskip 0.1cm 
 	Cũng gấp đôi số cạnh như Archimedes, nhưng xuất phát từ hình vuông, nhà toán học Pháp François Viète vào năm $1578$ đã tính chính xác số $\pi$  đến $9$ chữ số nhờ sử dụng đa giác  $3 \times 2^{17}$ cạnh dựa trên công thức
 	\begin{align*}
-			\dfrac{2}{\pi } = \cos \dfrac{\pi }{4} \cdot \cos \dfrac{\pi }{8} \cdot \cos \dfrac{\pi }{{16}}... = \\
-			= \sqrt {\dfrac{1}{2}}  \cdot \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)}  \cdot \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)} } \right)} ... \tag{$6$}
+			\dfrac{2}{\pi } = &\cos \dfrac{\pi }{4} \cdot \cos \dfrac{\pi }{8} \cdot \cos \dfrac{\pi }{{16}}...\\
+			= &\sqrt {\dfrac{1}{2}}  \cdot \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)}  \\
+			 &\!\times\!\sqrt {\dfrac{1}{2}\left( {1 \!+\! \sqrt {\dfrac{1}{2}\left(\! {1 \!+\! \sqrt {\dfrac{1}{2}} } \!\right)} } \right)} ... \tag{$6$}
 	\end{align*}
 	\textit{Giải thích}: Sử dụng công thức ${\cos ^2}a = \dfrac{{1 + \cos 2a}}{2}$  và $\cos \dfrac{\pi }{4} = \sqrt {\dfrac{1}{2}},$ ta dễ dàng tính được 
 	\begin{align*}
-		\cos \dfrac{\pi }{8} = \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)};\\
-		\cos \dfrac{\pi }{{16}} = \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)} } \right)}.
+		\cos \dfrac{\pi }{8} &= \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)};\\
+		\cos \dfrac{\pi }{{16}} &= \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}\left( {1 + \sqrt {\dfrac{1}{2}} } \right)} } \right)}.
 	\end{align*}
 	Công lao của François Viète là phát hiện ra công thức biểu diễn ($6$).
 	\vskip 0.1cm
@@ -340,15 +527,17 @@
 	\end{align*}
 	Suy ra
 	\begin{align*}
-		\dfrac{{A(n)}}{{A(4n)}} = \dfrac{{A(n)}}{{A(2n)}}.\dfrac{{A(2n)}}{{A(4n)}} = \cos \beta \cos \dfrac{\beta }{2}.
+		\dfrac{{A(n)}}{{A(4n)}} = \dfrac{{A(n)}}{{A(2n)}}\cdot\dfrac{{A(2n)}}{{A(4n)}} = \cos \beta \cos \dfrac{\beta }{2}.
 	\end{align*}
 	Do đó,
 	\begin{align*}
-			\dfrac{{A(n)}}{{A({2^k}n)}} = \dfrac{{A(n)}}{{A(2n)}}.\dfrac{{A(2n)}}{{A(4n)}}...\dfrac{{A\left( {{2^{k - 1}}n} \right)}}{{A({2^k}n)}}= \cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}.
+			\dfrac{{A(n)}}{{A({2^k}n)}} &= \dfrac{{A(n)}}{{A(2n)}}\cdot\dfrac{{A(2n)}}{{A(4n)}}...\dfrac{{A\left( {{2^{k - 1}}n} \right)}}{{A({2^k}n)}}\\
+			&= \cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}.
 	\end{align*}
 	Khi $k$  tiến tới $\infty$  thì $A({2^k}n)$  tiến tới diện tích hình tròn, nghĩa là $\mathop {\lim }\limits_{n \to \infty } A({2^k}n) = \pi {r^2}.$ Suy ra  
 	\begin{align*}
-		\pi {r^2} = \dfrac{{A(n)}}{{\cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}...}} = \dfrac{{\dfrac{1}{2}n{r^2}\sin 2\beta }}{{\cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}...}}.
+		\pi {r^2} &= \dfrac{{A(n)}}{{\cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}...}} \\
+		&= \dfrac{{\dfrac{1}{2}n{r^2}\sin 2\beta }}{{\cos \beta \cos \dfrac{\beta }{2}...\cos \dfrac{\beta }{{{2^k}}}...}}.
 	\end{align*}
 	Vậy  
 	\begin{align*}
@@ -374,18 +563,18 @@
 	\vskip 0.1cm
 	Số $\pi$  có thể biểu diễn dưới dạng phân số liên tục như sau: 
 	\begin{align*}
-		\pi  = 3 + \dfrac{1}{{7 + \dfrac{1}{{15 + \dfrac{1}{{1 + \dfrac{1}{{292 + \dfrac{1}{{1 + \dfrac{1}{{1 + \dfrac{1}{{1 + ...}}}}}}}}}}}}}}
+		\pi  \!=\! 3 \!+\! \dfrac{1}{{7 \!+\! \dfrac{1}{{15 \!+\! \dfrac{1}{{1 \!+\! \dfrac{1}{{292 \!+\! \dfrac{1}{{1 \!+\! \dfrac{1}{{1 \!+\! \dfrac{1}{{1 \!+\! ...}}}}}}}}}}}}}}
 	\end{align*}
 	Cắt cụt phân số này ta lần lượt được  $\pi  \approx 3;$  $\pi  \approx 3 + \dfrac{1}{7} = \dfrac{{22}}{7};$ $\pi  = 3 + \dfrac{1}{{7 + \dfrac{1}{{15}}}} = 3 + \dfrac{{15}}{{106}} = \dfrac{{333}}{{106}};$ $\pi  = 3 + \dfrac{1}{{7 + \dfrac{1}{{15 + 1}}}} = 3 + \dfrac{{16}}{{113}} = \dfrac{{355}}{{113}},$
 	là các phân số xấp xỉ số $\pi$ thường gặp trong lịch sử các dân tộc Tây--Đông.
 	\vskip 0.1cm
 	\textbf{\color{lichsutoanhoc}Thông tin tác giả}
 	\vskip 0.1cm
-	Tạ Duy Phượng (PGS Toán học)
+	$\bullet$ Tạ Duy Phượng (PGS Toán học)
 	\vskip 0.1cm
-	Đoàn Thị Lệ, Cung Thị Kim Thành (Thạc sĩ Hán Nôm)
+	$\bullet$ Đoàn Thị Lệ, Cung Thị Kim Thành (Thạc sĩ Hán Nôm)
 	\vskip 0.1cm
-	Mai Văn Thu, Nguyễn Hoàng Vũ (Thạc sĩ Toán học)
+	$\bullet$ Mai Văn Thu, Nguyễn Hoàng Vũ (Thạc sĩ Toán học)
 	\vskip 0.1cm
 	\textbf{\color{lichsutoanhoc}Tài liệu trich dẫn}
 	\vskip 0.1cm

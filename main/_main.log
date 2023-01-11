@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  10 JAN 2023 10:49
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  11 JAN 2023 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3007,6 +3007,69 @@ Underfull \hbox (badness 5274) in paragraph at lines 21--22
 )/m/n/12 trong bản giấy cói Ahmes
  []
 
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 37.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 9.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 37.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 7.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 67.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 10.95pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 67.
+Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
+m;mapping=tex-text;" at 10.95pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Italic.otf
+Package microtype Info: Character `156' is missing
+(microtype)             in font `\TU/EBGaramond(0)/m/it/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Requested font "zptmcm7t" at 10.95pt
+Requested font "zptmcm7t" at 8.0pt
+Requested font "zptmcm7t" at 6.0pt
+Requested font "zptmcm7m" at 10.95pt
+Requested font "zptmcm7m" at 8.0pt
+Requested font "zptmcm7m" at 6.0pt
+Requested font "zptmcm7y" at 10.95pt
+Requested font "zptmcm7y" at 8.0pt
+Requested font "zptmcm7y" at 6.0pt
+Requested font "zptmcm7v" at 10.95pt
+Requested font "zptmcm7v" at 8.0pt
+Requested font "zptmcm7v" at 6.0pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+Requested font "ptmb7t" at 10.95pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+Requested font "ptmb7t" at 8.0pt
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+Requested font "ptmb7t" at 6.0pt
+Requested font "ptmri7t" at 10.95pt
+Requested font "ptmri7t" at 8.0pt
+Requested font "ptmri7t" at 6.0pt
+Requested font "msam10" at 10.95pt
+Requested font "msam10" at 8.0pt
+Requested font "msam10" at 6.0pt
+Requested font "msbm10" at 10.95pt
+Requested font "msbm10" at 8.0pt
+Requested font "msbm10" at 6.0pt
+Requested font "yhcmex10" at 10.95pt
+Requested font "yhcmex10" at 8.0pt
+Requested font "yhcmex10" at 6.0pt
+Requested font "rsfs10" at 10.95pt
+Requested font "rsfs10" at 8.0pt
+Requested font "rsfs5" at 6.0pt
 
 Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
 (xeCJK)                
@@ -3035,37 +3098,6 @@ File: flichsu2.pdf Graphic file (type pdf)
 [1
 
 ]
-Overfull \hbox (54.24374pt too wide) detected at line 60
-[]
- []
-
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 74.
-Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 9.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Regular.otf
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 74.
-Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
-um;mapping=tex-text;" at 7.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Regular.otf
-
-Overfull \hbox (3.03911pt too wide) detected at line 82
-[]
- []
-
-
-Overfull \hbox (34.16515pt too wide) detected at line 86
-[]
- []
-
-
-Overfull \hbox (4.60672pt too wide) detected at line 90
-[]
- []
-
 File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
@@ -3078,35 +3110,14 @@ File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
-[2]
-Overfull \hbox (3.54955pt too wide) detected at line 107
+ [2]
+Overfull \hbox (4.60672pt too wide) detected at line 153
 []
  []
 
 
-Overfull \hbox (27.38072pt too wide) detected at line 132
+Overfull \hbox (3.54955pt too wide) detected at line 192
 []
- []
-
-
-Overfull \hbox (133.00293pt too wide) detected at line 147
-[]
- []
-
-
-Overfull \hbox (1.96727pt too wide) detected at line 155
-[]
- []
-
-
-Overfull \hbox (52.79248pt too wide) detected at line 159
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
-\TU/EBGaramond(0)/m/n/12 minh. Trong \TU/EBGaramond(0)/m/it/12 Plinthides and C
-ylinders\TU/EBGaramond(0)/m/n/12 ,
  []
 
 File: lichsu2.pdf Graphic file (type pdf)
@@ -3122,7 +3133,18 @@ File: lichsu2.pdf Graphic file (type pdf)
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
 [3]
-Overfull \hbox (1.67853pt too wide) detected at line 196
+Overfull \hbox (1.96727pt too wide) detected at line 289
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+\TU/EBGaramond(0)/m/n/12 minh. Trong \TU/EBGaramond(0)/m/it/12 Plinthides and C
+ylinders\TU/EBGaramond(0)/m/n/12 ,
+ []
+
+
+Overfull \hbox (1.67853pt too wide) detected at line 351
 []
  []
 
@@ -3141,25 +3163,6 @@ File: lichsu1.pdf Graphic file (type pdf)
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
 [4]
-Overfull \hbox (44.32626pt too wide) detected at line 249
-[]
- []
-
-
-Overfull \hbox (21.25461pt too wide) detected at line 277
-[]
- []
-
-
-Overfull \hbox (84.25462pt too wide) detected at line 300
-[]
- []
-
-
-Overfull \hbox (88.1276pt too wide) detected at line 308
-[]
- []
-
 File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
@@ -3172,25 +3175,10 @@ File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 []\TU/EBGaramond(0)/m/n/12 Tính toán thiên văn trong \TU/EBGaramond(0)/m/it/12 
 Shatapatha
- []
-
-
-Overfull \hbox (73.30005pt too wide) detected at line 325
-[]
- []
-
-
-Overfull \hbox (88.1082pt too wide) detected at line 348
-[]
- []
-
-
-Overfull \hbox (65.27496pt too wide) detected at line 352
-[]
  []
 
 File: lichsu1.pdf Graphic file (type pdf)
@@ -3206,26 +3194,9 @@ File: lichsu1.pdf Graphic file (type pdf)
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 []\TU/EBGaramond(0)/m/n/12 Năm $[]\OT1/ztmcm/m/n/12 1630$[]\TU/EBGaramond(0)/m/
 n/12 , nhà thiên văn người Áo
- []
-
-
-Overfull \hbox (14.23103pt too wide) detected at line 378
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 ]
- David M. Burton, \TU/EBGaramond(0)/m/it/12 The History of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-\TU/EBGaramond(0)/m/it/12 Mathematics, An Introduction\TU/EBGaramond(0)/m/n/12 
-, Seventh
  []
 
 File: lichsu2.pdf Graphic file (type pdf)
@@ -3241,13 +3212,25 @@ File: lichsu2.pdf Graphic file (type pdf)
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
 [7]
-Underfull \hbox (badness 5771) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+[]\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 ]
+ David M. Burton, \TU/EBGaramond(0)/m/it/12 The History of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+\TU/EBGaramond(0)/m/it/12 Mathematics, An Introduction\TU/EBGaramond(0)/m/n/12 
+, Seventh
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 593--594
 []\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 7$[]\TU/EBGaramond(0)/m/n/12 ]
  Thomas Heath, \TU/EBGaramond(0)/m/it/12 A History of Greek
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
 \TU/EBGaramond(0)/m/it/12 Mathematics\TU/EBGaramond(0)/m/n/12 , Oxford at the C
 larendon
  []
@@ -3276,12 +3259,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68964 strings out of 410939
- 1572945 string characters out of 2823530
- 2653859 words of memory out of 3000000
- 88486 multiletter control sequences out of 15000+600000
- 489820 words of font info for 87 fonts, out of 8000000 for 9000
+ 69213 strings out of 410939
+ 1578671 string characters out of 2823530
+ 2655859 words of memory out of 3000000
+ 88732 multiletter control sequences out of 15000+600000
+ 500875 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,28n,120p,1132b,573s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,28n,120p,1132b,956s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
 Output written on _main.pdf (8 pages).
