@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  11 JAN 2023 10:48
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.3) (preloaded format=xelatex 2022.6.2)  31 JAN 2023 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2888,9 +2888,13 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 80.
 
-(../lichsutoanhoc/lichsutoanhoc.tex
+(../thachthuctoanhoc/thachthuc2.tex
+Package mdframed Info: mdframed works in twoside mode on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 15.
+ 18.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -2903,7 +2907,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Requested font "zptmcm7t" at 9.0pt
 Requested font "zptmcm7t" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 15.
+ 18.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
@@ -2912,7 +2916,7 @@ Requested font "zptmcm7m" at 12.0pt
 Requested font "zptmcm7m" at 9.0pt
 Requested font "zptmcm7m" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 15.
+ 18.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
@@ -2921,7 +2925,7 @@ Requested font "zptmcm7y" at 12.0pt
 Requested font "zptmcm7y" at 9.0pt
 Requested font "zptmcm7y" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 15.
+ 18.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -2930,23 +2934,23 @@ Requested font "zptmcm7v" at 12.0pt
 Requested font "zptmcm7v" at 9.0pt
 Requested font "zptmcm7v" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-5.
+8.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
 Requested font "ptmb7t" at 12.0pt
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
 Requested font "ptmb7t" at 9.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
 Requested font "ptmb7t" at 7.0pt
 Requested font "ptmri7t" at 12.0pt
 Requested font "ptmri7t" at 9.0pt
@@ -2966,7 +2970,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 Requested font "msbm10" at 9.0pt
 Requested font "msbm10" at 7.0pt
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-15.
+18.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
@@ -2975,7 +2979,7 @@ File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 Requested font "yhcmex10" at 12.0pt
 Requested font "yhcmex10" at 9.0pt
 Requested font "yhcmex10" at 7.0pt
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 15
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
 .
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -2984,10 +2988,65 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 Requested font "rsfs10" at 12.0pt
 Requested font "rsfs10" at 9.0pt
 Requested font "rsfs7" at 7.0pt
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 25.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Bold.otf
 
-Missing character: There is no – in font zptmcm7t!
+
+Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKsansfont[...]{...}' to define it.
+
+Requested font "[lmsans12-regular]:mapping=tex-text;" at 12.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
+12-regular.otf
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
+8-regular.otf
+File: ../thachthuctoanhoc/bannerthachthuc.jpg Graphic file (type bmp)
+<../thachthuctoanhoc/bannerthachthuc.jpg>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+[1
+
+]
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 158.
+Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
+um;mapping=tex-text;" at 14.4pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Regular.otf
+LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 158.
+Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
+mapping=tex-text;" at 14.4pt
+ -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
+d/EBGaramond-Bold.otf
+LaTeX Font Info:    Trying to load font information for T5+qag on input line 16
+3.
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\t5qag.fd
+File: t5qag.fd 2009/09/25 v1.2 font definition file for T5/qag
+)
+Requested font "t5-qagb" at 12.0pt
+
+
+Package microtype Warning: I cannot find a protrusion list for font
+(microtype)                `T5/qag/b/n/12'. Switching off
+(microtype)                protrusion for this font on input line 163.
+
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 15.
+(Font)              scaled to size 12.0pt on input line 167.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 12.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -2995,38 +3054,148 @@ d/EBGaramond-Italic.otf
 Package microtype Info: Character `156' is missing
 (microtype)             in font `\TU/EBGaramond(0)/m/it/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `TU/EBGaramond(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
-Requested font "[EBGaramond-Bold.otf]/OT:script=latn;language=dflt;+pnum;+onum;
-mapping=tex-text;" at 12.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
-d/EBGaramond-Bold.otf
-
-Underfull \hbox (badness 5274) in paragraph at lines 21--22
-[]\TU/EBGaramond(0)/m/n/12 Bài toán $[]\OT1/ztmcm/m/n/12 48$[] \TU/EBGaramond(0
-)/m/n/12 trong bản giấy cói Ahmes
- []
-
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 37.
+(Font)              scaled to size 9.0pt on input line 182.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 9.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 37.
+(Font)              scaled to size 7.0pt on input line 182.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 7.0pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
+
+Overfull \hbox (2.03711pt too wide) detected at line 182
+[]
+ []
+
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+[2]
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+ [3]
+Overfull \hbox (6.71017pt too wide) detected at line 399
+[]
+ []
+
+
+Overfull \hbox (9.9956pt too wide) detected at line 408
+[]
+ []
+
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+[4]
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+ [5]
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+\TU/EBGaramond(0)/m/n/12 Do đó, hàm số $[]\OML/ztmcm/m/it/12 f\OT1/ztmcm/m/n/12
+ (\OML/ztmcm/m/it/12 x\OT1/ztmcm/m/n/12 )$[] \TU/EBGaramond(0)/m/n/12 đồng biến
+ trên
+ []
+
+
+Overfull \hbox (4.35783pt too wide) detected at line 612
+[]
+ []
+
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+[7]
+Overfull \hbox (9.58992pt too wide) detected at line 645
+[]
+ []
+
+
+Overfull \hbox (11.01385pt too wide) detected at line 655
+[]
+ []
+
+
+Overfull \hbox (4.6809pt too wide) detected at line 659
+[]
+ []
+
+
+Overfull \hbox (1.94536pt too wide) in paragraph at lines 750--751
+ [][] 
+ []
+
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 67.
+(Font)              scaled to size 10.95pt on input line 751.
 Requested font "[EBGaramond-Regular.otf]/OT:script=latn;language=dflt;+pnum;+on
 um;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
 d/EBGaramond-Regular.otf
 LaTeX Font Info:    Font shape `TU/EBGaramond(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 67.
+(Font)              scaled to size 10.95pt on input line 751.
 Requested font "[EBGaramond-Italic.otf]/OT:script=latn;language=dflt;+pnum;+onu
 m;mapping=tex-text;" at 10.95pt
  -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/ebgaramon
@@ -3047,13 +3216,13 @@ Requested font "zptmcm7v" at 10.95pt
 Requested font "zptmcm7v" at 8.0pt
 Requested font "zptmcm7v" at 6.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 751.
 Requested font "ptmb7t" at 10.95pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 751.
 Requested font "ptmb7t" at 8.0pt
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 751.
 Requested font "ptmb7t" at 6.0pt
 Requested font "ptmri7t" at 10.95pt
 Requested font "ptmri7t" at 8.0pt
@@ -3070,21 +3239,104 @@ Requested font "yhcmex10" at 6.0pt
 Requested font "rsfs10" at 10.95pt
 Requested font "rsfs10" at 8.0pt
 Requested font "rsfs5" at 6.0pt
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+[8]
+Overfull \hbox (12.69336pt too wide) detected at line 792
+[]
+ []
 
-Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKsansfont[...]{...}' to define it.
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+[9]
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+ [10]
+Overfull \hbox (6.3403pt too wide) detected at line 942
+[]
+ []
 
-Requested font "[lmsans12-regular]:mapping=tex-text;" at 12.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
-12-regular.otf
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Requested font "[lmsans8-regular]:mapping=tex-text;" at 8.0pt
- -> C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/opentype/public/lm/lmsans
-8-regular.otf
+
+Underfull \hbox (badness 7486) in paragraph at lines 997--998
+[]$[]\OMS/ztmcm/m/n/12 ^^O$[] \TU/EBGaramond(0)/m/n/12 Trường []\TU/EBGaramond(
+0)/b/n/12 THPT chuyên Hà Nội –
+ []
+
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+File: thachthuc2.pdf Graphic file (type pdf)
+<use thachthuc2.pdf>
+File: fthachthuc2.pdf Graphic file (type pdf)
+<use fthachthuc2.pdf>
+[11]
+Underfull \hbox (badness 5667) in paragraph at lines 1017--1018
+[]$[]\OMS/ztmcm/m/n/12 ^^O$[] \TU/EBGaramond(0)/m/n/12 Trường []\TU/EBGaramond(
+0)/b/n/12 THPT chuyên Lương Văn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1022
+\TU/EBGaramond(0)/b/n/12 Khiêm[]\TU/EBGaramond(0)/m/n/12 , tỉnh Quảng Nam: \TU/
+EBGaramond(0)/m/it/12 Trịnh Quốc
+ []
+
+)
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+File: thachthuc1.pdf Graphic file (type pdf)
+<use thachthuc1.pdf>
+File: fthachthuc1.pdf Graphic file (type pdf)
+<use fthachthuc1.pdf>
+ [12] (../lichsutoanhoc/lichsutoanhoc.tex
+Missing character: There is no – in font zptmcm7t!
+
+Underfull \hbox (badness 5274) in paragraph at lines 21--22
+[]\TU/EBGaramond(0)/m/n/12 Bài toán $[]\OT1/ztmcm/m/n/12 48$[] \TU/EBGaramond(0
+)/m/n/12 trong bản giấy cói Ahmes
+ []
+
 File: ../lichsutoanhoc/pic//../bannerlichsu.jpg Graphic file (type bmp)
 <../lichsutoanhoc/pic//../bannerlichsu.jpg>
 File: ../lichsutoanhoc/pic//../tieude.pdf Graphic file (type pdf)
@@ -3095,9 +3347,7 @@ File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
-[1
-
-]
+[13]
 File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
@@ -3110,7 +3360,7 @@ File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
- [2]
+ [14]
 Overfull \hbox (4.60672pt too wide) detected at line 153
 []
  []
@@ -3132,7 +3382,7 @@ File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
-[3]
+[15]
 Overfull \hbox (1.96727pt too wide) detected at line 289
 []
  []
@@ -3162,7 +3412,7 @@ File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
-[4]
+[16]
 File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
@@ -3175,7 +3425,7 @@ File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
- [5]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 499--500
 []\TU/EBGaramond(0)/m/n/12 Tính toán thiên văn trong \TU/EBGaramond(0)/m/it/12 
 Shatapatha
@@ -3193,7 +3443,7 @@ File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
-[6]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 556--557
 []\TU/EBGaramond(0)/m/n/12 Năm $[]\OT1/ztmcm/m/n/12 1630$[]\TU/EBGaramond(0)/m/
 n/12 , nhà thiên văn người Áo
@@ -3211,7 +3461,7 @@ File: lichsu2.pdf Graphic file (type pdf)
 <use lichsu2.pdf>
 File: flichsu2.pdf Graphic file (type pdf)
 <use flichsu2.pdf>
-[7]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 589--590
 []\TU/EBGaramond(0)/m/n/12 [$[]\OT1/ztmcm/m/n/12 5$[]\TU/EBGaramond(0)/m/n/12 ]
  David M. Burton, \TU/EBGaramond(0)/m/it/12 The History of
@@ -3248,7 +3498,7 @@ File: lichsu1.pdf Graphic file (type pdf)
 <use lichsu1.pdf>
 File: flichsu1.pdf Graphic file (type pdf)
 <use flichsu1.pdf>
- [8] (_main.aux)
+ [20] (_main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3259,12 +3509,12 @@ Package logreq Info: Writing requests to '_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69213 strings out of 410939
- 1578671 string characters out of 2823530
- 2655859 words of memory out of 3000000
- 88732 multiletter control sequences out of 15000+600000
- 500875 words of font info for 119 fonts, out of 8000000 for 9000
+ 69509 strings out of 410939
+ 1586499 string characters out of 2823530
+ 2663925 words of memory out of 3000000
+ 89014 multiletter control sequences out of 15000+600000
+ 502756 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 104i,28n,120p,1132b,956s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 104i,28n,120p,1132b,1100s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on _main.pdf (8 pages).
+Output written on _main.pdf (20 pages).
