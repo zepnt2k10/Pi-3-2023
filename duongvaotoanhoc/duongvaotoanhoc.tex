@@ -2,548 +2,133 @@
 \pagestyle{duongvaotoanhoc}
 \everymath{\color{duongvaotoanhoc}}
 \graphicspath{{../duongvaotoanhoc/pic/}}
-\blfootnote{$^1$\color{duongvaotoanhoc}Viện Toán học.}
+\blfootnote{$^1$\color{duongvaotoanhoc}https://www.quantamagazine.org/elegant-six-page-proof-reveals-the-emergence-of-random-structure-20220425/}
 \begingroup
 \AddToShipoutPicture*{\put(0,616){\includegraphics[width=19.3cm]{../bannerduongvao}}}
-\AddToShipoutPicture*{\put(168,553){\includegraphics[scale=1]{../tieude.pdf}}}
+\AddToShipoutPicture*{\put(75,475){\includegraphics[scale=1]{../tieude.pdf}}}
 \centering
 \endgroup
-\vspace*{154pt}
+\vspace*{235pt}
 
 \begin{multicols}{2}	
-	Chúng ta biết rằng một đa thức bậc $n\geq 1$ với hệ số thực có không quá $n$ nghiệm thực. Điều này cũng có thể được minh họa là đồ thị của nó cắt trục hoành tại không quá $n$ điểm. Tổng quát hơn ta có: đồ thị  đó cắt một đường thẳng bất kỳ cũng tại không quá $n$ điểm. 
+	\textit{Hai nhà toán học trẻ đã khiến các đồng nghiệp kinh ngạc với một chứng minh hoàn chỉnh của giả thuyết Kahn--Kalai -- một phát biểu bao quát về cách cấu trúc xuất hiện trong các tập hợp và đồ thị ngẫu nhiên.}
 	\begin{figure}[H]
-		\centering
 		\vspace*{-5pt}
+		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[scale=0.52, duongvaotoanhoc, node font= \small]
-			\begin{axis} [axis lines=center]
-				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
-				\addplot [domain=-5:5,red,smooth] {2};
-				\addplot [domain=-5:5,green,smooth] {4};
-			\end{axis}
-		\end{tikzpicture}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $1$.}}
+		\includegraphics[width= 1\linewidth]{1}
 		\vspace*{-10pt}
 	\end{figure}
-	Nếu cho hai đường elipse trên mặt phẳng cắt nhau ta thấy số giao điểm không thể quá $4$. Điều này cũng đúng với các đường parabola và hyperbola.
+	Khi các nhà toán học Jeff Kahn và Gil Kalai lần đầu tiên đưa ra giả thuyết ``ngưỡng kỳ vọng" năm $2006$, chính họ không tin vào nó. Phát biểu của họ -- một khẳng định rộng về các đối tượng toán học gọi là các đồ thị ngẫu nhiên -- trông có vẻ quá mạnh, quá bao quát, quá táo bạo để có thể là đúng. Tưởng chừng như đó là suy nghĩ mơ mộng hơn là một chiêm nghiệm về sự thật toán học. Ngay cả như thế, chưa ai có thể chỉ ra nó sai, và giả thuyết đã nhanh chóng trở thành một trong những bài toán mở quan trọng nhất trong lĩnh vực.
 	\vskip 0.1cm
-	Nếu cho một elipse cắt đồ thị của một đa thức bậc $3$ thì số giao điểm có thể lên tới $6$. Ta thấy, số giao điểm lớn nhất có thể liên quan tới bậc của các đường cong mà ta đang xét.
+	Giờ đây, hơn $15$ năm sau, hai nhà toán học trẻ ở Đại học Stanford (Stanford University) đã làm điều mà Kahn và Kalai cho rằng không thể: trong một tiền ấn phẩm ngắn đến ngạc nhiên đăng trên Internet mới chỉ một vài tuần trước, Jinyoung Park và Phạm Huy Tuấn đã đưa ra một chứng minh đầy đủ cho giả thuyết này.
+	\vskip 0.1cm
+	``Nó đơn giản và mới mẻ đến  kinh ngạc," Kalai nói. ``Nó kỳ thú. Nó tuyệt vời."
+	\vskip 0.1cm
+	Kết quả trên tự động chứng tỏ hàng trăm các phát biểu riêng biệt khác, mà mỗi phát biểu này đều rất khó để chứng minh -- và nó có cả những hệ quả sâu hơn cho cái hiểu của chúng ta về các đồ thị ngẫu nhiên và các tập hợp toán học một cách rộng hơn.
+	\vskip 0.1cm
+	``Tôi gọi chứng minh của họ là ảo diệu,"  Jacob Fox -- một nhà toán học ở Stanford, đồng thời là thầy hướng dẫn PhD của Phạm -- nói. ``Điều này sẽ làm một phần chính của lĩnh vực tiến lên."
+	\vskip 0.1cm
+	\textbf{\color{duongvaotoanhoc}Đóng băng một đồ thị}
+	\vskip 0.1cm
+	Giả thuyết Kahn--Kalai rất rộng -- nó được viết theo ngôn ngữ trừu tượng của các tập hợp và các phần tử của chúng -- nhưng nó có thể được hiểu bằng cách xét một trường hợp đơn giản. Đầu tiên, tưởng tượng một đồ thị: một tập hợp các điểm, hoặc đỉnh, nối với nhau bởi các đường, hay cạnh. Để làm đồ thị trở nên ngẫu nhiên, lấy một đồng xu không cân đối -- đồng xu này lật ngửa với xác suất $1\%$, hay $30\%$, hay bất kì xác suất nào từ $0\%$ đến $100\%$ -- và tung nó một lần với mỗi cặp đỉnh. Nếu đồng xu lật ngửa, nối cặp đỉnh này với một cạnh; nếu đồng xu lật sấp, không nối. Lặp lại quá trình này với mỗi cặp đỉnh có thể.
 	\begin{figure}[H]
+		\vspace*{-5pt}
 		\centering
-		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[duongvaotoanhoc,scale=0.52, node font= \small]
-			\begin{axis}[domain=-5:5, axis x line=bottom,axis y line=left]
-				\addplot [blue,domain=-2.5:2.5, smooth] { x^3 - 4*x };
-			\end{axis}
-			\draw[red] (3.5,3) ellipse (3.3cm and 1cm);
-		\end{tikzpicture}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $2$.}}
-		\vspace*{-5pt}
+		\includegraphics[width= 1\linewidth]{2}
+		\vspace*{-15pt}
 	\end{figure}
-	Nếu xét đa thức hệ số phức và các nghiệm phức, đồng thời tính cả bội thì một đa thức bậc $n\geq 1$ với hệ số phức có đúng $n$ nghiệm. Ta cũng có thể nói, ``đồ thị'' của đa thức này cắt ``đường thẳng phức'' tại đúng $n$ điểm nếu tính cả bội.
+	Các nhà toán học muốn biết khi nào một đồ thị như thế có lẽ sẽ chứa một cấu trúc thú vị nào đó. Có lẽ nó chứa một tam giác. Hoặc có lẽ nó chứa một chu trình Hamilton, một chuỗi các cạnh khép kín đi qua mỗi đỉnh đúng một lần. Ta có thể nghĩ về bất kì thuộc tính nào, miễn là nó ``tăng" -- nghĩa là, nghĩa là nếu ta bổ sung thêm các cạnh vào một đồ thị đã có thuộc tính đó thì ta sẽ không phá hỏng thuộc tính đó.
 	\vskip 0.1cm
-	Định lý Bézout phát biểu rằng {\em hai đường cong đại số trên mặt phẳng xạ ảnh cắt nhau tại đúng $n$ điểm nếu kể cả bội, với $n$ là tích của bậc của hai đường cong} (ngoại trừ trường hợp chúng trùng nhau một phần). 
+	Nếu xác suất đồng xu lật ngửa là thấp, thì các cạnh sẽ hiếm, và các thuộc tính như các chu trình Hamilton có vẻ sẽ không xuất hiện. Nhưng nếu bạn làm tăng xác suất, một điều kì lạ sẽ xảy ra. Mỗi thuộc tính có một thứ gọi là ngưỡng: một xác suất mà khi đó cấu trúc hiện ra, thường rất đột ngột. Cũng giống như những tinh thể nước đá tạo thành khi nhiệt độ hạ xuống dưới 0 độ Celsius, sự xuất hiện đột nhiên của một thuộc tính cụ thể trở nên cực kì giống như nhiều cạnh được bổ sung vào đồ thị. Khi các cạnh được thêm vào một đồ thị ngẫu nhiên có N đỉnh với xác suất nhỏ hơn $\log(N)/N$, ví dụ, đồ thị có lẽ không chứa một chu trình Hamilton nào. Nhưng khi xác suất được điều chỉnh nhỉnh hơn $\log(N)/N$ chỉ một sợi tóc, một chu trình Hamilton trở nên cực kì có thể.
 	\vskip 0.1cm
-	Khẳng định về số giao điểm của hai đường cong trên mặt phẳng đã được phát biểu nhiều lần trong nhiều tác phẩm bởi các nhà toán học nổi tiếng như Newton ($1665$), Maclaurin ($1720$), Euler và Cramber ($1748$). Tuy nhiên trước Etienne Bézout ($1730-1783$), chưa có một chứng minh cụ thể nào được đưa ra. 
+	Các nhà toán học muốn xác định các ngưỡng này cho nhiều thuộc tính đáng quan tâm. ``Các ngưỡng có lẽ là điều cơ bản nhất bạn muốn hiểu," Fox nói. ``Tôi nhìn một đối tượng ngẫu nhiên; nó có thuộc tính mà tôi quan tâm không?" Trong khi ngưỡng đã được tính cho các chu trình Hamilton và một vài cấu trúc riêng biệt khác, trong  hầu hết các trường hợp, việc xác định một ngưỡng chính xác, hoặc ngay cả một ước lượng tốt cho ngưỡng, cũng là rất khó.
 	\vskip 0.1cm
-	Bézout đưa ra chứng minh năm $1779$ trong cuốn sách {\em Théorie générale des équations algébraiques} (Lý thuyết đại cương về phương trình đại số). Một đường cong đại số trên mặt phẳng được xác định như tập nghiệm của một đa thức hai biến. Như vậy khẳng định có thể được phát biểu như là số nghiệm của một hệ hai phương trình đa thức theo hai ẩn.
-	Bézout đã đưa ra khái niệm {\em kết thức} để giải quyết bài toán. Cho hai đa thức $F(x)$ và $G(x)$ hệ số phức với bậc tương ứng là $m$ và $n$. Ký hiệu $\mathbb C[x]_d$ là không gian véc tơ các đa thức với bậc nhỏ hơn $d$. Xét ánh xạ tuyến tính ``Bézout'' cho bởi 
-%	\setlength{\abovedisplayskip}{5pt}
-%	\setlength{\belowdisplayskip}{5pt}
-	\begin{align*}
-		\mathbb C[x]_n\!\times\! \mathbb C[x]_m \!\rightarrow\!  \mathbb C[x]_{m\!+\!n},
-		(A,B)\!\mapsto\! AF\!+\!BG.
-	\end{align*}
-	Nhận xét là số chiều của hai không gian nguồn và đích cùng bằng $m+n$. Do đó ta có thể xét định thức của ánh xạ này. Đây chính là kết thức của $F$ và $G$. Theo bổ đề Bézout (xem Bổ đề $2$ dưới đây), nếu $F$ và $G$ có nghiệm chung thì ánh xạ trên có hạch không tầm thường, từ đó kết thức bằng $0$, và ngược lại. 
+	Vì thế các nhà toán học thường dựa trên một tính toán dễ hơn, nhằm đưa ra một giá trị nhỏ nhất có thể, hoặc một chặn dưới, cho ngưỡng này. ``Ngưỡng kỳ vọng" này được tính chủ yếu bằng các lấy một trung bình có trọng số. ``Cái hay về ngưỡng kỳ vọng này là nó rất dễ tính," David Conlon -- một nhà toán học tại Viện Kỹ thuật California (California Institute of Technology) -- nói. ``Nói nôm na, bạn có thể tính ngưỡng kỳ vọng này chỉ trong hai dòng cho hầu như bất kỳ thứ gì."
 	\vskip 0.1cm
-	Bằng cách coi hai đa thức theo $x$ và $y$ như là các đa thức theo biến $y$, thì kết thức của chúng sẽ là một đa thức theo $x$ với bậc không vượt quá tích các bậc của hai đa thức ban đầu. Từ đó Bézout có một chứng minh cho các đa thức (và do đó các đường cong) ở vị trí tổng quát. 
+	Nhưng các trung bình có thể sai lầm. Ví dụ, với các chu trình Hamilton, ngưỡng kỳ vọng là  $1/N$, thấp hơn giá trị thực $\log(N)/N$ bởi một thừa số $\log(N)$.
 	\vskip 0.1cm
-	Một chứng minh chặt chẽ và bao quát hết mọi khả năng chỉ được đưa ra bởi Georges--Henri Halphen năm $1873$. 
-	Khó khăn trong việc phát biểu và chứng minh dạng tổng quát của định lý Bézout là việc định nghĩa khái niệm bội của giao điểm của hai đường cong đại số. J.--P. Serre ($1965$) đề xuất giải quyết vấn đề này một cách triệt để thông qua vành địa phương. Đây cũng có thể coi là một trong những điểm xuất phát của Hình học Đại số hiện đại. 
+	Năm $2006$, Kahn và Kalai cho rằng đây có thể là tình huống xấu nhất. Khẳng định cùng tên của họ phát biểu rằng khoảng cách giữa ngưỡng kỳ vọng và ngưỡng thực tế không bao giờ lớn hơn một thừa số logarithm. Giả thuyết này, theo Conlon, ``về bản chất lấy câu hỏi trọng tâm về các đồ thị ngẫu nhiên và đưa ra một câu trả lời tổng quát cho nó."
 	\vskip 0.1cm
-	$\pmb{1.}$ \textbf{\color{duongvaotoanhoc}Đường cong cho bởi phương trình đa thức}
+	Nhưng đó chỉ là một trường hợp đơn giản. Giả thuyết liên quan tới nhiều đồ thị ngẫu nhiên hơn. Nếu đúng, nó cũng đúng cho các dãy số ngẫu nhiên, cho các tổng quát hoá của các đồ thị gọi là các siêu đồ thị, và ngay cả những kiểu hệ thống rộng hơn. Đó là vì Kahn và Kalai viết phát biểu của họ dưới dạng các tập hợp trừu tượng. Các đồ thị ngẫu nhiên đóng vai trò một trường hợp riêng biệt -- một đồ thị ngẫu nhiên có thể xem như một tập con ngẫu nhiên của tập hợp tất cả các cạnh -- nhưng có nhiều đối tượng khác cũng nằm trong tầm nhìn của giả thuyết. ``Thật lạ lùng, khi bạn đang làm việc với các đồ thị, chứng minh nó trong ngữ cảnh đó là rất khó," Conlon nói. ``Nhưng một cách nào đó, nhảy sang ngữ cảnh trừu tượng này làm lộ ra cái rốn của nó."
+		\begin{figure}[H]
+		\vspace*{-5pt}
+		\centering
+		\captionsetup{labelformat= empty, justification=centering}
+		\includegraphics[width= 1\linewidth]{3}
+		\vspace*{-15pt}
+	\end{figure}
+	Chính mức tổng quát này khiến phát biểu dường như không thể tin được. ``Đó là một giả thuyết rất dũng cảm," Shachar Lovett -- một nhà khoa học máy tính ở Đại học California, San Diego (University of California, San Diego) -- nói. Vì một lẽ, nó sẽ ngay lập tức tựu trung một nỗ lực to lớn trong tổ hợp -- cố gắng tính các ngưỡng cho các thuộc tính khác nhau. ``Các câu hỏi nơi mà các chứng minh cần đến dường như rất dài và phức tạp đột ngột biến mất ngay," Alan Frieze -- một nhà toán học tại Đại học Carnegie Mellon (Carnegie Mellon University) -- nói. ``Các chứng minh trở thành chỉ là các hệ quả tầm thường của giả thuyết này."
 	\vskip 0.1cm
-	Một đường thẳng trong mặt phẳng được xác định bởi phương trình  
-	\begin{align*}
-		ax+by+c=0
-	\end{align*}
-	trong đó ít nhất một trong hai số $a$ hoặc $b$ khác $0$. Tương tự, một đường cong bậc $2$, còn gọi là đường conic, được xác định bởi phương trình
-	\begin{align*}
-		ax^2+bxy+cx^2+dx+ey+g=0,
-	\end{align*}
-	với ít nhất một trong các hệ số $a,b,c$ khác $0$.
+	Điều mà nhiều bài toán có vẻ không liên quan có thể được giải quyết bằng một giả thuyết rộng như thế cảm giác như một cố gắng vươn xa đối với nhiều nhà toán học. ``Nói thật, nó có vẻ hoàn toàn điên rồ," Conlon nói. Sau khi tạo ra giả thuyết này, Kahn và Kalai đã không cố gắng chứng minh nó. Họ đã nghiên cứu nhằm tìm ra phản ví dụ. Có rất nhiều ngữ cảnh để khám phá, nhưng họ đã thấy rằng cuối cùng họ buộc phải thất bại.
 	\vskip 0.1cm
-	Tổng quát, một {\em đường cong đại số} trên mặt phẳng (còn gọi tắt là đường cong phẳng) được định nghĩa như là tập nghiệm của một đa thức hai biến (khác hằng số):
-	\begin{align*}
-		F(x,y)=0. \tag{$1$}
-	\end{align*}
-	Ở đây $F$ là một đa thức theo hai biến $x$ và $y$:
-	\begin{align*}
-		F(x,y)=\sum_{i,j} a_{ij}x^iy^j,
-	\end{align*}
-	trong đó tổng ở vế phải là một tổng hữu hạn. Tổng lớn nhất các số mũ trong các đơn thức $x^iy^j$ ở vế phải được gọi là {\em bậc} của $F$, ký hiệu $\deg F$. 
+	Nhưng như nó đã diễn ra, ``câu chuyện tiến triển theo một cách rất khác" so với họ mong đợi, Kalai nói.
 	\vskip 0.1cm
-	Xét {\em họ các đường cong} xác định bởi phương trình
-	\begin{align*}
-		(ax+by+c)^2-\alpha=0,
-	\end{align*}
-	với $\alpha$ thay đổi. Khi $\alpha\neq 0$ phương trình này xác định một cặp hai đường thẳng song song. Khi $\alpha$ tiến tới $0$, hai đường thẳng này tiến gần tới nhau và khi $\alpha=0$, hai đường thẳng này tạo thành {\em một đường thẳng kép}. 
+	\textbf{\color{duongvaotoanhoc}Con đường hoa hướng dương}
 	\vskip 0.1cm
-	Như vậy hình ảnh hình học của tập nghiệm không phản ánh hết bản chất đại số của phương trình, đặc biệt khi phương trình đó phụ thuộc vào tham số. Để giải quyết vấn đề này, ta sẽ sử dụng {\em ngôn ngữ đại số} để mô tả hình học. Định nghĩa của một đường cong đại số vì thế sẽ được phát biểu như sau. 
-	\vskip 0.2cm
-	\PIbox{\em Đường cong đại số trong mặt phẳng được xác định bởi một đa thức $F\in \mathbb C[x,y]$ có bậc lớn hơn hoặc bằng 1, tập các điểm hình học của nó là nghiệm của phương trình $F = 0$. Đường cong đại số này được gọi tắt là {\em đường cong $F$}. }
-	\vskip 0.2cm
-	Trong Hình học Đại số, thay vì xét các tập nghiệm thực của phương trình ($1$), người ta xét các nghiệm phức. Có một số khác biệt căn bản giữa nghiệm thực và nghiệm phức, từ góc độ đại số cũng như từ góc độ hình học. 
+	Các phương pháp mà cuối cùng có thể sẽ dẫn đến một chứng minh mới cho giả thuyết Kahn--Kalai bắt đầu với một đột phá trong một bài toán khác tưởng chừng chẳng liên quan. Theo nhiều cách, câu chuyện bắt đầu với giả thuyết hoa hướng dương, một câu hỏi đưa ra bởi các nhà toán học Paul Erdős và Richard Rado năm $1960$. Giả thuyết hoa hướng dương xem xét rằng liệu các bộ tập hợp (collections of sets) có thể được xây dựng theo các cách giống như các cánh hoa của một bông hoa hướng dương hay không.
 	\vskip 0.1cm
-	($1$) Một trong những tính chất đại số quan trọng nhất của số phức là mọi đa thức hệ số phức với bậc $n\geq 1$ đều có đủ $n$ nghiệm phức, nếu tính cả bội.   
+	Năm $2019$, Lovett là một thành viên của một nhóm nghiên cứu đã tiến rất gần tới một lời giải hoàn chỉnh của bài toán hoa hướng dương. Tại thời điểm đấy, công trình đó tưởng chừng hoàn toàn tách biệt với giả thuyết Kahn--Kalai bao gồm các tìm hiểu về xác suất. ``Tôi không thấy bất kì kết nối nào với giả thuyết của chúng tôi," Kalai nói. Lovett cũng thế, ông nói rằng ``chúng tôi không hề biết về những câu hỏi đấy. Chúng tôi quan tâm tới các hoa hướng dương."
+	Nhưng Kahn, Park (cô Park là học trò nghiên cứu sinh tiến sĩ của Kahn tại thời điểm đó) và các đồng nghiệp đã liên kết hai giả thuyết khi họ cố gắng chứng minh một phiên bản lỏng hơn của giả thuyết Kahn--Kalai một vài tháng sau đó. (Chứng minh của họ đã được công bố trên tạp chí  Annals of Mathematics năm ngoái.) Giả thuyết yếu hơn này, phát biểu bởi nhà toán học Pháp Michel Talagrand, thay ngưỡng kỳ vọng Kahn--Kalai bởi một ngưỡng kỳ vọng ``phân số" -- về bản chất là một cách khác để lấy trung bình có trọng số. Định nghĩa tinh chế lại này ``cho bạn thêm khoảng trống để làm việc," Lovett nói.
+	\vskip 0.1cm
+	Nhóm của Kahn và Park nhận thấy rằng họ có thể trích xuất các kĩ thuật này từ kết quả hoa hướng dương năm 2019, tinh chỉnh chúng, và áp dụng vào giả thuyết Talagrand. ``Đây chắc chắn là cái khiến chúng tôi bắt đầu," Kahn nói.
+	\vskip 0.1cm
+	Các nhà toán học dùng một cách tiếp cận vòng lặp cho bài toán. Họ đặt ra mục tiêu chứng tỏ rằng nếu họ chọn một tập hợp ngẫu nhiên -- ví dụ một đồ thị ngẫu nhiên -- nó có thể chứa một cấu trúc ví dụ như một chu trình Hamilton. Nhưng thay vì chọn toàn bộ một tập hợp ngẫu nhiên ngay lập tức, họ chọn nó theo từng phần, một quá trình tương tự như cách mà Lovett và các đồng nghiệp tiếp cận giả thuyết hoa hướng dương. ``Chúng tôi thực hiện lặp lại một loại quá trình ngẫu nhiên," Park nói. ``Chúng tôi chọn một vài cạnh theo từng bước" cho tới khi chúng chứa đựng toàn bộ một chu trình Hamilton.
+	\vskip 0.1cm
+	Để làm điều này, nhóm nghiên cứu quay sang một khái niệm về ngẫu nhiên gọi là trải. Nếu các chu trình Hamilton ``trải ra" đẹp, nghĩa là không quá nhiều chu trình chứa cùng một cạnh hay một tập con các cạnh. ``Một cách nào đó, bộ các tập hợp trải ra đẹp trong không gian," Phạm nói. ``Nó không quá cô cụm hoặc tập trung trên bất kì phần nào." Nếu các chu trình được phân bố tốt theo cách này, nó đảm bảo rằng quá trình chứa đựng ngẫu nhiên theo từng phần -- ngay cả khi nó thất bại cho nhiều chu trình Hamilton -- sẽ thành công để nắm bắt được ít nhất một.
+	\vskip 0.1cm
+	Cách tiếp cận này là khả thi chỉ bởi vì một tương đương quan trọng: ta có thể định lượng trải theo một cách liên quan trực tiếp tới ngưỡng kỳ vọng phân số. Vì điều này, các nhà toán học có thể viết lại giả thuyết Talagrand dưới dạng trải.
+	\vskip 0.1cm
+	Thật hấp dẫn, chứng minh của giả thuyết yếu hơn này đủ để giải quyết một loạt các bài toán liên quan tới ngưỡng. ``Mỗi hệ quả của giả thuyết đầy đủ mà chúng ta biết cũng là một hệ quả của giả thuyết yếu hơn," Kahn nói. Thực ra, với ông, Kalai và những người khác, điều này gợi ý rằng hai giả thuyết có thể hầu như là giống nhau -- rằng các giá trị của các ngưỡng kỳ vọng phân số và ban đầu về mặt cơ bản là bằng nhau. Nếu ai đó có thể chứng minh đẳng thức này, họ có thể chứng minh giả thuyết Kahn--Kalai. ``Tôi đã luôn nghĩ rằng cách duy nhất để chứng minh giả thuyết của chúng tôi là chứng minh điều này," Kahn nói.
+	\vskip 0.1cm
+	Nhưng đó không phải là điều đã xảy ra. Trong khi các nhà toán học khác cố gắng đi theo bản đồ này để chứng minh hoàn toàn giả thuyết Kahn--Kalai, Park và Phạm tìm ra một cách tiếp cận hoàn toàn mới. ``Jinyoung và Huy tìm thấy một lập luận trực tiếp đến kinh ngạc, ngắn đến kinh ngạc mà đấm xuyên thẳng mọi thứ," Conlon nói. ``Thật là phi thường. Tôi không hề trông đợi điều này."
+	\vskip 0.1cm
+	Kahn đồng ý. ``Đây là một trong những cái hay trong toán học," ông nói.
 	\vskip 0.1cm 
-	($2$) Từ góc độ hình học chúng ta biết rằng tập các số phức lập thành một mặt phẳng, thường gọi là {\em mặt phẳng phức}. Do đó tập các số phức có chiều hình học bằng $2$. Như vậy, một đường cong phức cũng có số chiều bằng $2$. 
+	``Những thứ mà mọi người nghĩ rằng vô vọng thực ra lại không chỉ vô vọng, mà còn chẳng khó nữa."
 	\vskip 0.1cm
-	($3$) Để phân biệt mặt phẳng phức với không gian tuyến tính phức hai chiều ta sẽ gọi không gian này là {\em mặt phẳng affine phức}. Chữ ``affine'' hàm ý ta chỉ xét nó như một không gian tuyến tính và chỉ quan tâm tới các tính chất song song hay cắt nhau của các đường thẳng, hoặc tính thẳng hàng hay không thẳng hàng của các điểm, mà không quan tâm tới các yếu tố như góc hay khoảng cách. 
+	\textbf{\color{duongvaotoanhoc}Một tiếp cận ngạc nhiên}
 	\vskip 0.1cm
-	($4$) Việc hình dung hình học các đường cong đại số phức tương đối khó. Ví dụ hai đường thẳng phức trong không gian phức hai chiều thường cắt nhau tại duy nhất một điểm. Nhìn từ góc độ hình học điều đó có nghĩa là hai mặt phẳng trong không gian bốn chiều cắt nhau tại một điểm. 
+	Thoạt tiên, cả Park và Phạm đều không có ý định tấn công giả thuyết ban đầu. Khi bắt đầu học về bài toán khi còn là nghiên cứu sinh, Park ``có thể cảm nhận vẻ đẹp và sức mạnh của giả thuyết này," cô nói. ``Nhưng tôi chưa bao giờ tưởng tượng ra rằng mình có thể chứng minh được nó."
 	\vskip 0.1cm
-	($5$) Do đó, để thuận tiện cho tư duy hình học, đôi khi ta sử dụng ``phần thực'' của một đường cong phức, khi nó được xác định như là tập nghiệm của một đa thức hệ số thực. Tuy nhiên chúng ta cần cảnh giác rằng nhiều kết luận đúng đối với phần thực, có thể không đúng đối với toàn bộ đường cong phức. 
+	``Điều đó chẳng hề có trong tâm trí của chúng tôi," Phạm nói thêm.
 	\vskip 0.1cm
-	Ví dụ xét tập nghiệm của phương trình
-	\begin{align*}
-		xy-1=0.
-	\end{align*}
-	Đây là một hyperbola. Phần thực của nó bao gồm hai nhánh rời nhau. 
-	Thực hiện một phép đổi biến với hệ số phức:
-	$x'=(x+y)/2;\ y'=(x-y)/2i$, ta có
-	\begin{align*}
-		{x'}^2+{y'}^2=xy=1.
-	\end{align*}
-	Nghĩa là nếu ``cắt'' đường cong phức $xy-1=0$ bởi mặt phẳng thực căng trên hai véc tơ $x'$ và $y'$ thì ta thu được một đường tròn. 
+	Thay vào đó, họ đang làm việc với một giả thuyết khác đưa ra bởi Talagrand khi họ bị ``đánh thức bởi một phép màu," Phạm nói. Họ nhận ra rằng ``bức tranh mà chúng ta có ở đây, các ý tưởng mà chúng ta có, nó theo một cách nào đó có vẻ như mạnh mẽ hơn dáng vẻ của nó." Các ý tưởng này, họ nghĩ, có thể đủ mạnh để đưa họ thẳng tới một chứng minh của bài toán Kahn--Kalai.
 	\vskip 0.1cm
-	Thực tế, toàn bộ đường cong là một mặt hai chiều liên thông! 
-	Để thấy rõ hơn điều này ta biểu diễn các biến phức $x$ và $y$ theo các biến thực:
-	\begin{align*}
-		x=u+iv\text{ và } y=w+iz.
-	\end{align*}
-	Phương trình trên được đưa về dạng:
-	\begin{align*}
-		\begin{cases}
-			 uw-vz=1\\
-			 uz+vw=0.
-		\end{cases}
-	\end{align*}
-	Từ đó ta suy ra
-	\begin{align*}
-		t:=\frac uw=-\frac vz\neq 0.
-	\end{align*}
-	Thế vào phương trình đầu ta thu được
-	\begin{align*}
-		u^2+v^2=t.
-	\end{align*}
+	Trong suốt một đêm không ngủ vào tháng Ba, họ đã tìm ra cách chứng minh.
+	\vskip 0.1cm
+	Không giống như ngưỡng kỳ vọng phân số, ngưỡng kỳ vọng thông thường không liên quan tới trải. Trải ``cho bạn một điểm khởi đầu. Và nếu bạn đi đến giả thuyết ban đầu, không phân số, điểm khởi đầu ấy biến mất," Kahn nói. ``Vì thế nó có vẻ rất thử thách."
+	\vskip 0.1cm
+	``Thế bạn làm gì?" Phạm nói. ``Trong trường hợp này, chúng tôi thay đổi quan điểm của mình."
 	\begin{figure}[H]
 		\vspace*{-5pt}
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
-		\begin{tikzpicture}[duongvaotoanhoc,scale=0.8]
-			\begin{axis}[axis lines = center, xmin=-3.5,xmax=3.5, ticks = none, axis line style={draw=none}]
-				\addplot [cackithi,domain=-2.5:2.5, smooth] {x^2};
-			\end{axis}
-			\draw[dashed, cackithi] (5.03,2.5) arc
-			[
-			start angle=0,
-			end angle=180,
-			x radius=1.6cm,
-			y radius =0.59cm
-			];
-			\draw[cackithi] (5.03,2.5) arc
-			[
-			start angle=0,
-			end angle=-180,
-			x radius=1.6cm,
-			y radius =0.59cm
-			];
-			\draw[cackithi] (5.86,5.7) arc
-			[
-			start angle=0,
-			end angle=360,
-			x radius=2.44cm,
-			y radius =0.9cm
-			];
-			\draw[cackithi] (5.86,5.7) -- (0.98,5.7) (2.6,4.86) -- (4.3,6.56);
-			\draw[cackithi, dashed] (5.03,2.5) -- (1.83,2.5) (2.9,2) -- (3.9,3);
-			\draw[-stealth] (4.42,1) -- (2.42,-1) node [below] {$y$};
-			\draw[-stealth] (0,0) -- (6.86, 0) node [right] {$x$};
-			\draw[-stealth] (3.43,-1) -- (3.43, 7) node [above] {$z$};
-			\draw[cackithi] plot [smooth] coordinates {(2.6,4.86) (2.85,1.95) (3.1,0.65) (3.43,0)};
-			\draw[cackithi, dashed] plot [smooth] coordinates {(4.3,6.56) (4,3) (3.75,0.67) (3.43,0)};
-			\draw (3.7, -0.4) node {$O$};
-		\end{tikzpicture}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $3$.}}
+		\includegraphics[width= 1\linewidth]{4}
 		\vspace*{-10pt}
 	\end{figure}
-	Như vậy:
-	\vskip 0.2cm
-	\PIbox{trong không gian $3$ chiều với các tọa độ là $u,v,t$, nghiệm của phương trình xác định {\bf\color{duongvaotoanhoc} đường hyperbola phức} lập thành một {\bf\color{duongvaotoanhoc} mặt paraboloid tròn xoay thực}, bỏ đi điểm $(0,0,0)$ (ứng với giá trị $t=0$).}
-	\vskip 0.2cm
-	$\pmb{2.}$ \textbf{\color{duongvaotoanhoc}Đường cong  bất khả quy}
-	\vskip 0.1cm 
-	Nếu đa thức $F$ phân tích thành hai đa thức $G$ và $H$, bậc $>0$, thì tập nghiệm của $F= 0$ là hợp các tập nghiệm của $G=0$ và $H=0$. Một đa thức được gọi là {\em bất khả quy} nếu nó không có phân tích như trên. Đường cong xác định bởi đa thức này cũng được gọi là {\em bất khả quy}. Kết quả sau đây khẳng định rằng một đường cong đại số sẽ là hợp của các đường cong bất khả quy.
+	Cụ thể hơn, họ nghĩ về bài toán theo một đối tượng toán học gọi là một phủ. Một phủ là một bộ các tập hợp, mà mỗi đối tượng với một thuộc tính nào đó chứa một trong các tập hợp này. Ví dụ, một phủ của mọi chu trình Hamilton là bộ tất cả các cạnh. Mọi chu trình Hamilton sẽ chứa một trong các cạnh này.
 	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Định lý} $\pmb{1.}$ \textit{Một đa thức hai biến với hệ số phức luôn phân tích được theo một cách duy nhất (sai khác các hệ số khác $0$) thành tích các đa thức bất khả quy.}
-	\vskip 0.1cm 
-	Phân tích đa thức $F$ ra các thành phần bất khả quy:
-	\begin{align*}
-		F =\prod_{i=1}^r F_i{}^{d_i},\quad d_i\geq 1.
-	\end{align*}
-	Khi đó đường cong $F$  là hợp của các đường cong $F_i$. Ta cũng nói mỗi đường cong  $F_i$ là một {\em thành phần bất khả quy} của đường cong  $F$. Số $d_i$ được gọi là số bội của thành phần bất khả quy tương ứng. 
+	Park và Phạm viết lại giả thuyết Kahn--Kalai theo cách mà họ có thể sử dụng các phủ. Giả thuyết ban đầu đặt hạn chế lên xác suất của một đồng xu có trọng số lật ngửa sao cho đảm bảo một đồ thị ngẫu nhiên hay tập hợp có một thuộc tính nào đó. Cụ thể, nó nói rằng xác suất phải là ít nhất ngưỡng kỳ vọng cho thuộc tính nhân với một thừa số logarithm. Park và Phạm xoay ngược vấn đề lại: Nếu một thuộc tính có lẽ không xuất hiện, thì xác suất gắn với đồng xu đặt trọng số là thấp hơn ngưỡng kỳ vọng nhân với một thừa số logarithm.
 	\vskip 0.1cm
-	Chứng minh của định lý $1$ là mẫu mực cho cách tiếp cận sơ cấp tới các đa thức nhiều biến. Ý tưởng cơ bản là đưa việc xét đa thức theo hai biến $x,y$ về việc xét các đa thức theo biến $x$ với hệ số là các đa thức theo biến $y$, sau đó ta mở rộng tập các hệ số ra các phân thức đại số theo $y$. Phương pháp này tương tự như khi ta sử dụng các đa thức với hệ số hữu tỷ để giải quyết bài toán cho các đa thức hệ số nguyên. 
+	Đó là nơi mà các phủ xuất hiện: Khi một phủ nhỏ có thể được xây dựng cho một tập con các cấu trúc (như một bộ các chu trình Hamilton), nghĩa là đóng góp của một tập hợp vào ngưỡng kỳ vọng là nhỏ. (Nhớ rằng ngưỡng kỳ vọng được tính bằng cách lấy một loại trung bình có trọng số trên mọi cấu trúc có thể có một dạng cho trước.) Vì thế điều mà Park và Phạm cần chứng minh là nếu một tập hợp ngẫu nhiên có vẻ không chưa một cấu trúc đích, phải tồn tại một phủ nhỏ cho mọi cấu trúc đích ấy. Phần chính trong chứng minh của họ dành cho việc xây dựng phủ nhỏ ấy.
 	\vskip 0.1cm
-	Các bạn học sinh giỏi toán bậc THPT rất nên thử tìm cách chứng minh định lý trên. Ý tưởng chứng minh sử dụng bổ đề quen thuộc của Bézout và  Gauss cho đa thức hai biến. 
+	Họ làm điều này bằng cách sử dụng một quá trình lấy mẫu theo từng phần tương tự như cái mà họ đã dùng trong các kết quả trước, cùng lúc giới thiệu cái mày Fox gọi là ``một lập luận đếm rất thông minh." Một tuần sau đêm tháng Ba không ngủ, họ đăng một bài báo đẹp $6$ trang lên mạng.
 	\vskip 0.1cm
-	Dưới đây là phát biểu của các bổ đề này cho các đa thức hệ số nguyên. 
+	``Chứng minh của họ là siêu đơn giản. Họ dùng ý tưởng cơ bản mà chúng tôi đã phát triển và [các ý tưởng khác từ] những bài báo kia và thêm một bước chuyển vào nó," Lovett nói. ``Và với bước chuyển mới này, mọi thứ một cách nào đó trở nên dễ hơn rất, rất nhiều."
 	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Bổ đề} $\pmb{2}$ (Bézout)\textbf{\color{duongvaotoanhoc}.} \textit{Cho hai số nguyên $m$ và $n$. Khi đó tồn tại các số nguyên $k$ và $l$ sao cho }
-		\begin{align*}
-			k\cdot m+l\cdot n=\textrm{\rm UCLN}(m,n).
-		\end{align*}
+	Frieze đồng ý. ``Tôi không thể giải thích, nhưng thật ngạc nhiên là nó đúng," ông nói.
 	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Bổ đề} $\pmb{3}$ (Gauss)\textbf{\color{duongvaotoanhoc}.}
-	\textit{Đối với một đa thức $P(x)$ với hệ số nguyên ta định nghĩa {\em  dung lượng} của $P(x)$ là ước chung lớn nhất của các hệ số của $P(x)$, ký hiệu là $c(P)$. Đa thức $P(x)$ được gọi là {\em rút gọn} nếu $c(P)=1$. Với hai đa thức hệ số nguyên tùy ý $P(x)$, $Q(x)$ ta luôn có}
-	\begin{align*}
-		c(P\cdot Q)=c(P)\cdot c(Q).
-	\end{align*}
-	Vành đa thức $\mathbb C[x]$ có nhiều tính chất số học giống vành các số nguyên. Cụ thể, trong đó cũng có thể thực hiện được phép chia có dư. Tập các phân thức hữu tỷ $\mathbb C(x)$ đóng vai trò tương tự như tập các số hữu tỷ. 
-	Việc phát biểu và chứng minh các kết quả tương tự với bổ đề Gauss và Bézout cho các đa thức hai biến dành cho bạn đọc.  
-	\vskip 0.1cm	
-	$\pmb{3.}$ \textbf{\color{duongvaotoanhoc}Điểm đơn và tiếp tuyến}
+	Cũng như kết quả phân số, giả thuyết Kahn--Kalai, giờ đây đã chứng minh là đúng, tự động dẫn đến một loạt các giả thuyết liên quan. Nhưng hơn thế, ``đây là một kỹ thuật chứng minh mạnh có lẽ sẽ dẫn đến nhiều điều mới,"  Noga Alon -- một nhà toán học tại Đại học Princeton (Princeton University) -- nói. ``Họ phải làm đúng cách."
 	\vskip 0.1cm
-	Tiếp tuyến tới đồ thị của đa thức $P(x)$ tại điểm $x=a$, $y=P(a)$ được cho bởi phương trình
-	\begin{align*}
-		y-P(a)=P'(a)(x-a).
-	\end{align*}
-	Ta có thể mở rộng kết quả này cho một đường cong đại số bất kỳ cho bởi đa thức $F(x,y)$. Giả sử $P(a,b)$ là một điểm trên đường cong (nghĩa là $F(a,b)=0$). Nếu một trong hai đạo hàm riêng 
-	\begin{align*}
-		F_x:=\frac{\partial F}{\partial x} \textrm{ hoặc } F_y:=\frac{\partial F}{\partial y}
-	\end{align*}
-	khác $0$ tại $P$ thì tiếp tuyến tại $P$ tới đường cong được cho bởi phương trình:
-	\begin{align*}
-		F_x(a,b)(x-a)+F_y(a,b) (y-b)=0. \tag{$2$}
-	\end{align*}
-	Có nhiều cách để lý giải điều này. Cách đơn giản nhất là thông qua khai triển Taylor đối với $F$ tại điểm $P(a,b)$. Do $F(a,b)=0$ nên khai triển này có dạng:
-	\begin{align*}
-		F(x,y)=&F_1(x-a,y-b)\\
-		&+F_2(x-a,y-b)+\ldots,
-	\end{align*}
-	trong đó $F_1(x-a,y-b)= F_x(a,b)(x-a)+F_y(a,b)(y-b)$, còn các số hạng $F_2(x-a,y-b)$... có bậc cao hơn theo $x-a$ và $y-b$.  Do tiếp tuyến tới một đường cong tại một điểm $P$ trên đường cong mô tả \textit{xấp xỉ tuyến tính} của phần đường cong tại xung quanh điểm $P$, ta kết luận, phương trình của tiếp tuyến được cho bởi công thức ($2$).
+	Park và Phạm đã bắt đầu áp dụng phương pháp của họ cho các bài toán khác. Họ đặc biệt quan tâm đến việc hiểu chính xác hơn khoảng cách giữa ngưỡng kỳ vọng và ngưỡng thực tế. Bằng cách chứng minh giả thuyết Kahn--Kalai, họ đã chỉ ra  rằng khoảng cách này lớn nhất là một thừa số logarithm -- nhưng đôi khi khoảng cách này là nhỏ hơn, hoặc không tồn tại. Hiện tại, không có một cơ chế rộng hơn để phân loại khi nào mỗi tình huống này có thể đúng; các nhà toán học phải tính ra theo từng trường hợp. Giờ đây, ``chúng tôi nghĩ rằng với kỹ thuật hiệu quả mà chúng tôi có, chúng tôi hy vọng có thể ấn định các ngưỡng này chính xác hơn nhiều," Phạm nói.
 	\vskip 0.1cm
-	Nhận xét rằng khai triển Taylor của một đa thức thực ra chính là sắp xếp các đơn thức theo lũy thừa tăng dần, sau khi đã đổi biến đưa điểm đang xét về gốc tọa độ: $(x,y)\mapsto (x-a,y-b)$. 
+	Và chứng minh của họ có thể có các hệ quả khác nữa. ``Giả thuyết Kahn--Kalai không hề là kết thúc của câu chuyện," Park nói.
 	\vskip 0.1cm
-	\PIbox{Một điểm trên đường cong $F$ được gọi là \textbf{\color{duongvaotoanhoc}điểm đơn} nếu ít nhất một đạo hàm riêng của $F$ tại điểm đó khác $0$.  }
+	Viện Toán học Clay (Clay Mathematics Institute) thông báo rằng Phạm Tuấn Huy đã được trao tặng Học bổng Nghiên cứu Clay (Clay Research Fellowship) năm $2023$. Phạm Tuấn Huy sẽ nhận bằng tiến sĩ từ Đại học Stanford năm $2023$, dưới sự hướng dẫn của Jacob Fox. Anh cũng được bổ nhiệm làm một Nghiên cứu viên Clay (Clay Research Fellow) trong $5$ năm bắt đầu từ $01/07/2023$.
 	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Ví dụ.} Khai triển Taylor của đa thức 
-	$F(x,y)=x^2+y^2$ 
-	tại điểm $A(1,2)$ được cho bởi
-	\begin{align*}
-		F(x,y)=\,&((x-1)+1)^2+((y-2)+2)^2\\
-		=\,&F(1,2)+[2(x-1)+4(y-2)]\\
-		&+[(x-1)^2+(y-2)^2].
-	\end{align*}
-	Do điểm $A(1,2)$ nằm trên đường cong $F-5=0$ nên tiếp tuyến tại đó được cho bởi phương trình
-	\begin{align*}
-		2(x-1)+4(y-2)=0.
-	\end{align*}
-	$\pmb{4.}$ \textbf{\color{duongvaotoanhoc}Điểm bội và tiếp tuyến}
-	\vskip 0.1cm 
-	Một điểm trên đường cong $F$  được gọi là điểm bội nếu nó không phải là điểm đơn. Trước tiên ta sẽ xét trường hợp $F$ là một đa thức bất khả quy trong $\mathbb C[x,y]$. Để đơn giản ta sẽ giả thiết điểm đang xét là gốc tọa độ $O(0,0)$. Các hình vẽ dưới đây mô tả ``phần thực'' của một số đường cong tại lân cận điểm $O$:
+	Tiêu chí tuyển chọn chính của các Nghiên cứu viên Clay là chất lượng nghiên cứu vượt trội của ứng cử viên và lời hứa của ứng cử viên là sẽ trở thành một nhà toán học hàng đầu. Các Nghiên cứu viên Clay được tuyển dụng bởi Viện Toán học Clay, nhưng có thể làm việc ở bất kỳ nơi nào tại Mỹ, Châu  u, hay một nơi khác trên thế giới.
 	\vskip 0.1cm
-	Nhắc lại rằng nếu điểm $O(0,0)$ là điểm bội của $F(x,y)$ khai triển Taylor của $F$ tại $O$ có dạng
-	\begin{align*}
-		F=F_m+F_{m+1}+\ldots, \quad m\geq 2,
-	\end{align*}
-	trong đó $F_i$ là các đa thức thuần nhất bậc $i$ theo $x$ và $y$. 
-	\begin{figure}[H]
-		\vspace*{-10pt}
-		\centering
-		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[height=0.4\linewidth]{4a}\quad\quad
-		\includegraphics[height=0.4\linewidth]{4b}
-		\caption{\small\quad\quad$F=x^3-y^2$ \quad\quad$F\!=\!(x^2 \!+\! y^2)^2 \!+\! 3x^2y\!-\!y^3$}
-		\includegraphics[height=0.4\linewidth]{4c}\quad\quad
-		\includegraphics[height=0.4\linewidth]{4d}
-		\caption{\small$F=x^3+x^2-y^2$ \quad$F=(x^2 + y^2)^3- 4x^2y^2$}
-		\caption{\small\textit{\color{duongvaotoanhoc}Hình $4$. Các đường cong với kỳ dị tại $O(0,0)$.}}
-		\vspace*{-5pt}
-	\end{figure}
-	Trong các đồ thị ở hình $4$, giá trị $m$ tương ứng là $2,2,3,4$. Phương trình
-	$F_m=0$
-	tương ứng là:
-	\begin{align*}
-		y^2&=0\\
-		x^2-y^2&=0\\
-		3x^2y-y^3&=0\\
-		4x^2y^2&=0.
-	\end{align*} 
-	Các phương trình này xác định các chùm đường thẳng (bao gồm cả đường thẳng kép) là các tiếp tuyến tới đường cong tại $O$. 
-	\vskip 0.1cm
-	Ta thấy giá trị của $m$ ứng với số các tiếp tuyến tới đường cong tại điểm $O$. Lý giải cho điều này rất đơn giản. 
-	\vskip 0.2cm
-	\PIbox{Trong một {\em lân cận đủ nhỏ} của $O$, $F$ được xấp xỉ bởi $F_m$, do đó đường cong  $F$  được xấp xỉ bởi đường cong $F_m$.}
-	\vskip 0.2cm
-	Mở rộng phân tích ở trên cho một điểm bất kỳ trên đường cong ta có định nghĩa sau. 
-	Cho $F\in \mathbb C[x,y]$ là đa thức bất khả quy và $P(a,b)$ là một điểm trên đường cong $F$. 
-	\vskip 0.1cm
-	\vspace*{0.1pt}
-	
-	\vspace*{-10pt}
-	\PIbox{Bội của $P$ trên đường cong, ký hiệu là $\mu_P(F)$, là lũy thừa nhỏ nhất trong khai triển Taylor của $F$ tại $P$:
-		\setlength{\abovedisplayskip}{5pt}
-		\setlength{\belowdisplayskip}{5pt}
-	\begin{align*}
-		F(x,y)= &F_m(x-a,y-b)\\
-		&+F_{m+1}(x-a,y-b)+\ldots
-	\end{align*}
-		Phương trình
-		$F_m(x-a,y-b)=0$
-		xác định các đường thẳng tiếp xúc với đương cong tại $P$. }
-	\vskip 0.2cm
-	Nếu hai đường cong $F$  và $G$  cắt nhau tại điểm $P$, thì bội giao tại $P$ của hai đường cong phụ thuộc vào vị trí tương đối của các tiếp tuyến của hai đường cong. Trong trường hợp các tiếp tuyến là đôi một phân biệt thì bội giao sẽ là tích của số các tiếp tuyến. Nhưng trong trường hợp có sự trùng lấp thì vấn đề chưa rõ ràng. 
-	\vskip 0.1cm
-	Về nguyên tắc, để xác định được bội giao, người ta thực hiện một phép biến dạng nhỏ hai đường cong tại lân cận của giao điểm, sau đó đếm số giao điểm của hai đường cong trong lân cận đó. Đó là phương pháp của Giải tích. Trong Hình học Đại số, ta sẽ sử dụng tiếp cận khác, trong đó ta sẽ trừu tượng hóa vấn đề lên để qua đó nhìn thấy sâu hơn bản chất của nó. Bội giao của hai đường cong sẽ được nhìn nhận như chiều của các không gian véc tơ. Công cụ để triển khai việc này là {\em vành địa phương}. 
-	\vskip 0.1cm
-	$\pmb{5.}$ \textbf{\color{duongvaotoanhoc}Vành địa phương và bội của điểm trên đường cong} 
-	\vskip 0.1cm 
-	Thay vì xác định bội của một điểm trên đường cong như là số các giao điểm nào đó, ta có thể xác định số bội này thông qua vành địa phương. Ý tưởng mấu chốt ở đây là vành địa phương tại một điểm trên đường cong {\em chứa toàn bộ thông tin về hình học} của đường cong trong lân cận của điểm đó. Sau khi đã nhìn thấy điều đó thì việc xây dựng các công thức là vấn đề mang tính kỹ thuật. 
-	\vskip 0.1cm
-	Nhắc lại rằng số bội của một điểm $P$ trên đường cong $F$ được xác định nhờ khai triển Taylor của $F$ tại điểm đó. Ta sẽ định nghĩa số bội này thông qua số chiều của các không gian véc tơ được xây dựng từ vành địa phương của $P$.  Ưu điểm của cách làm này là nó cho một mô tả trừu tượng về số bội, cho chúng ta hiểu biết sâu sắc hơn về nó, để từ đó cho phép phát triển những phương pháp hiện đại hơn khi nghiên cứu số bội. 
-	\vskip 0.1cm
-	{\em Vành địa phương tại một điểm trong mặt phẳng affine} (phức) được hiểu là tập các hàm số xác định trên một lân cận nào đó của điểm đã cho. Do ta chỉ xét các hàm ``đại số'' nên định nghĩa của một hàm địa phương là như sau.
-	\vskip 0.2cm
-	\PIbox{Vành địa phương $\pazocal O_P$ tại điểm $P(a,b)$ trong mặt phẳng affine là tập hợp các phân thức đại số $F/G$ với tính chất
-		$G(P):=G(a,b)\neq 0.$}
-	\vskip 0.2cm
-	Tập hợp các phân thức trong $\pazocal O_P$ triệt tiêu tại $P$ lập thành ideal cực đại duy nhất trong vành này, ký hiệu là $\mathfrak m_P$. 
-	\begin{align*}
-		\mathfrak m_P=\left\{ F/G \left|\right.  F(P)=0, G(P)\neq 0\right\}.
-	\end{align*}
-	Trong Đại số Giao hoán, một vành với duy nhất ideal cực đại được gọi   là \textbf{\color{duongvaotoanhoc}vành địa phương}.
-	\vskip 0.1cm
-	Cho $P(a,b)$ là một điểm trên đường cong bất khả quy  $F$. Các hàm địa phương trên mặt phẳng affine tại $P$ khi hạn chế lên đường cong này xác định các hàm địa phương trên đó. Ta nhận thấy rằng hai hàm khi hạn chế lên đường cong sẽ bằng nhau nếu chúng sai khác nhau bởi một bội số của $F$. Do đó, 
-	\vskip 0.2cm
-	\PIbox{vành các hàm địa phương tại $P$ trên đường cong $F$  là vành thương 
-		$\pazocal O_P(F):= \pazocal O_P/(F),$}
-	\vskip 0.2cm
-	trong đó $(F)$ là ideal sinh bởi $F$ trong vành $\pazocal O_P$.
-	Vành $\pazocal O_P(F)$ cũng là vành địa phương với ideal cực đại duy nhất:
-	$\mathfrak m_P(F)=\mathfrak m_P/(F).$
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Mệnh đề} $\pmb{4}$ (Bội của điểm trên đường cong)\textbf{\color{duongvaotoanhoc}.} 
-		\textit{Cho $F\in\mathbb C[x,y]$ là đa thức bất khả quy và $P$ là một điểm trên đường cong $F$. 
-		Khi đó với mọi $n\geq\mu:= \mu_P(F)$  ta có}
-		\setlength{\abovedisplayskip}{6pt}
-		\setlength{\belowdisplayskip}{6pt} 
-		\begin{align*}
-			\dim_{\mathbb C}  \pazocal O_P(F)/(\mathfrak m_P(F)^n)=\mu \cdot n -
-			{\mu \choose 2}.
-		\end{align*}
-	\vskip 0.1cm
-	Trong trường hợp $P$ là một điểm đơn trên đường cong, nghĩa là $\mu_P(F)=1$, từ công thức trên ta suy ra:
-	\begin{align*}
-		\dim_{\mathbb C} \mathfrak m_P(F)^n/\mathfrak m_P(F)^{n+1}=1
-	\end{align*}
-	với mọi $n$. 
-	\vskip 0.1cm
-	$\pmb{6.}$ \textbf{\color{duongvaotoanhoc}Giao điểm của hai đường cong}
-	\vskip 0.1cm
-	Xét hai đường cong $F$  và $G$. Khi đó hệ phương trình
-	\begin{align*}
-		\begin{cases}
-			F = 0\\
-			G = 0
-		\end{cases}
-	\end{align*}
-	xác định tập giao của hai đường cong này.  
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Định lý} $\pmb{5.}$ \textit{Giả thiết hai đường cong $F$  và $G$  không chứa chung một thành phần, khi đó chúng giao nhau tại một tập hữu hạn điểm.}
-	\vskip 0.1cm
-	\textit{Chứng minh.}
-	Theo giả thiết thì hai đa thức $F$ và $G$ không có ước chung trong $\mathbb C[x,y]$. Khi đó hai đa thức này cũng không có ước chung trong $\mathbb C(x)[y]$ -- tập các đa thức theo $y$ với hệ số trong $\mathbb C(x)$. Từ đó, theo bổ để B\'ezout, tồn tại hai đa thức $A$ và $B$ trong  $\mathbb C(x)[y]$ sao cho
-	\begin{align*}
-		1=AF+BG.
-	\end{align*}
-	Sau khi quy đồng mẫu số các hệ số của $A$ và $B$ ta thu được đẳng thức
-	\begin{align*}
-		C= A'F+ B'G,
-	\end{align*}
-	với $0\neq C\in\mathbb C[x]$, $ A', B'\in \mathbb C[x,y]$. 
-	Như vậy nghiệm của hệ $(F=0, G=0)$ có tọa độ theo trục $x$ là nghiệm của đa thức {\em một biến} $C$, do đó là tập hữu hạn. Lý luận tương tự đối với tọa độ $y$ ta suy ra điều phải chứng minh. 
-	\vskip 0.1cm
-	$\pmb{7.}$ \textbf{\color{duongvaotoanhoc}Xạ ảnh hóa mặt phẳng affine} 
-	\vskip 0.1cm
-	Trong mặt phẳng affine phức, tồn tại các đường cong không giao nhau tại điểm nào, ví dụ hai đường thẳng song song. 
-	Đây có thể được hiểu như một trường hợp {\em suy biến}. Xét hệ sau:
-	\begin{align*}
-		\begin{cases}
-			\alpha x+y+1 =0\\
-			y=0
-		\end{cases}
-	\end{align*}
-	Với mọi $\alpha\neq 0$, hệ có duy nhất nghiệm, với $\alpha=0$, hệ vô nghiệm. 
-	\vskip 0.1cm
-	Ta hình dung khi $\alpha$ {\em tiến tới} $0$, giao điểm của hai đường thẳng $y=0$ và $\alpha x+y+1=0$ {\em chạy ra vô cùng}. Ta sẽ bổ sung {\em điểm ở vô cùng} này vào mặt phẳng affine. Mỗi đường thẳng trên mặt phẳng affine sẽ xác định một điểm ở vô cùng. Hai đường thẳng song song cùng xác định một điểm tại vô cùng là điểm mà chúng cắt nhau. 
-	\vskip 0.1cm
-	Mặt phẳng affine bổ sung thêm các điểm ở vô cùng được gọi là {\em mặt phẳng xạ ảnh}. Các điểm trong mặt phẳng xạ ảnh (thực hoặc phức) được mô tả thuận tiện nhất thông qua các tọa độ thuần nhất. Một tọa độ thuần nhất là một dãy tỷ lệ $[a_0:a_1:a_2]$ trong đó có ít nhất một trong các tọa độ $a_i\neq 0$. Nhắc lại rằng hai dãy tỷ lệ $[a_0:a_1:a_2]$ và $[b_0:b_1:b_2]$ được gọi là bằng nhau nếu tồn tại $\lambda\neq 0$ sao cho
-	\begin{align*}
-		a_i=\lambda b_i, \quad i=0,1,2.
-	\end{align*}
-	Một điểm trong mặt phẳng affine với tọa độ $(a_0,a_1)$ sẽ có tọa độ thuần nhất $[a_0:a_1:1]$. Các điểm ở vô cùng có tọa độ dạng $[a_0:a_1:0]$ (với ít nhất một trong hai số $a_0$, $a_1$ khác $0$). Điểm này ứng với đường thẳng chứa các điểm $(\lambda a_0,\lambda a_1)$ trên mặt phẳng affine. 
-	\vskip 0.1cm	
-	Các đường thẳng trong không gian xạ ảnh thông thường được tạo thành từ một đường thẳng trong không gian affine và một điểm ở vô cùng. Ngoại lệ duy nhất là đường thẳng ở vô cùng -- nó bao gồm tất cả các điểm ở vô cùng.
-	Phương trình đường thẳng trong mặt phẳng xạ ảnh có dạng
-	\begin{align*}
-		aX+bY+cZ=0,
-	\end{align*}
-	trong đó có ít nhất một trong các hệ số $a,b,c$ khác $0$. Phương trình
-	$Z=0$ 
-	xác định {\em đường thẳng ở vô cùng} -- rõ ràng các nghiệm của nó có dạng $[a:b:0]$.
-	\vskip 0.1cm
-	Với mỗi đa thức $F\in \mathbb C[x,y]$, ta định nghĩa đa thức $\widehat F(X,Y,Z)\in \mathbb C[X,Y,Z]$ theo công thức
-	\begin{align*}
-		\widehat F(X,Y,Z):=Z^{\deg F}F(X/Z,Y/Z).
-	\end{align*}
-	Trong đa thức $\widehat F$ tất cả các đơn thức đều có cùng bậc, chính là bậc của đa thức $ F$ ban đầu. Ta nói $\widehat F$ là một {\em đa thức thuần nhất}. 
-	Các điểm trong mặt phẳng xạ ảnh với tọa độ thuần nhất là nghiệm của phương trình
-	\begin{align*}
-		\widehat F(X,Y,Z)=0
-	\end{align*}
-	xác định một đường cong trong không gian xạ ảnh, được gọi là  {\em xạ ảnh hóa} của đường cong $F$. 
-	\vskip 0.1cm
-	Các điểm ở vô cùng của đường cong xạ ảnh hóa ứng với nghiệm chung của hai  phương trình 
-	$\widehat F=0,\ Z=0.$
-	Hay nói cách khác, là nghiệm của phương trình
-	\begin{align*}
-		\widehat F(X,Y,0)=0.
-	\end{align*}
-	Xét khai triển Taylor của $F$ tại $(0,0)$:
-	\begin{align*}
-		F=F_0+F_1+\ldots + F_m.
-	\end{align*}
-	Khi đó $F_i$ là tổng tất cả các đơn thức bậc $i$ trong $F$. Do đó 
-	\begin{align*}
-		\widehat F(X,Y,0)= F_m(X,Y).
-	\end{align*}
-	Vậy các điểm ở vô cùng của $F$  là các điểm có tọa độ thuần nhất $[a:b:0]$ trong đó $(a,b)$ là nghiệm không tầm thường của $F_m=0$.
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Ví dụ.} Xét đường cong $xy-1=0$. Xạ ảnh hóa ta thu được đường cong
-	\begin{align*}
-		XY-Z^2=0.
-	\end{align*}
-	Giao của nó với đường thẳng ở vô cùng $Z=0$ được xác định bởi phương trình
-	$XY=0.$
-	Vậy ta có hai điểm $[1:0:0]$ và $[0:1:0]$ ứng với hai tập nghiệm $(a,0)$ và $(0,b)$ của phương trình trên. Hai điểm ở vô cùng này tương ứng với điểm $(0,0,0)$ trên mặt paraboloid tròn xoay mô tả ở mục $1$ (điểm còn lại là điểm ở vô cùng của mặt paraboloid).   
-	\vskip 0.1cm
-	Trong mặt phẳng xạ ảnh phức, hai đường thẳng bất kỳ luôn cắt nhau. Điều này cũng đúng với các đường cong bất kỳ. 
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Mệnh đề} $\pmb{6.}$
-	\textit{Hai đường cong đại số trong mặt phẳng xạ ảnh luôn giao nhau.}
-	\vskip 0.1cm
-	$\pmb{8.}$ \textbf{\color{duongvaotoanhoc}Bội giao của hai đường cong tại một điểm} 
-	\vskip 0.1cm 
-	Chúng ta sẽ minh họa định nghĩa bội giao của hai đường cong bất khả quy $F$  và $G$  tại một điểm $P$ trong trường hợp $P$ là điểm đơn trên $F$.  Giả thiết $P$ là gốc tọa độ. Trong một lân cận đủ nhỏ của $P$, $F$  có thể được xấp xỉ bởi một đường thẳng, giả sử là $x=0$. Khi đó số giao điểm của hai đường cong tại $P$ bằng số nghiệm (kể cả bội) của phương trình 
-	\begin{align*}
-		G(0,y)=0
-	\end{align*}
-	trong một lân cận của $0$. Như vậy ta có thể thay $G$ bằng cách nhân với một hàm không triệt tiêu trong một lân cận của $P$ mà không làm thay đổi số nghiệm. Chẳng hạn, ta có thể biến đổi $G$ để 
-	\begin{align*}
-		G(0,y)=\prod_{j=1}^d(y-b_j),
-	\end{align*}
-	với các số $b_j$ nằm trong một lân cận đủ nhỏ của $0$, với $d$ là số giao điểm. Theo tinh thần ở mục trước $d$ chính là chiều của không gian véc tơ
-	\begin{align*}
-		\pazocal O_P/(F,G).
-	\end{align*}
-	Đây là cơ sở cho định nghĩa sau.
-	\vskip 0.2cm
-	\PIbox{Bội giao của hai đường cong $F$  và $G$  tại điểm $P$ được định nghĩa là số
-	\begin{align*}
-		\mu_P(F,G):=\dim_{\mathbb C}\pazocal O_P/(F,G).
-	\end{align*}}
-	\vskip 0.05cm
-	Đối với mọi điểm $B$ không là giao điểm ta định nghĩa
-	$\mu_B(F,G)=0.$ 
-	Ta có các tính  chất cơ bản sau đây của bội giao. 
-	\vskip 0.1cm
-	($1$) Nếu các đa thức $G$ và $H$ không có ước chung với $F$ thì
-	\setlength{\abovedisplayskip}{7pt}
-	\setlength{\belowdisplayskip}{7pt} 
-	\begin{align*}
-		\mu_P(F,GH)=\mu_P(F,G)+\mu_P(F,H).
-	\end{align*}
-	($2$) $\mu_P(F,G)\geq \mu_P(F)\cdot \mu_P(G)$ với dấu bằng xảy ra khi và chỉ khi $F$ và $G$ không có chung tiếp tuyến tại $P$;
-	\vskip 0.1cm
-	($3$) Nếu $P$ là điểm đơn trên $F$  thì $\mu_P(F,G)$ bằng định giá của $G$ trong vành $\pazocal O_P(F)$. 
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Định lý} $\pmb{7}$ (Bézout)\textbf{\color{duongvaotoanhoc}.} \textit{Cho $\widehat F=0$ và $\widehat G=0$ là hai đường cong  trong mặt phẳng xạ ảnh với bậc tương ứng là $m$ và $n$. Giả sử chúng không có thành phần chung. Khi đó}
-	\begin{align*}
-		\sum_P\mu_P(\widehat F,\widehat G)=m\cdot n.
-	\end{align*}
-	Giả sử giao điểm của  $\widehat F=0$ và $\widehat G=0$ đều nằm trong mặt phẳng affine $Z\neq 0$. 
-	Khi đó  định lý Bézout là hệ quả của hai mệnh đề:
-	\vskip 0.1cm
-	($1$) Đặt $F(x,y):=\widehat F(x,y,1)$, $G(x,y):=\widehat G(x,y,1)$, thì 
-		\begin{align*}
-			\sum_P\mu_P(\widehat F,\widehat G)=\dim_{\mathbb C}R/(F,G);
-		\end{align*}
-	($2$) Nếu hai đường cong $F$  và $G$  không giao nhau tại vô cùng thì 
-		\begin{align*}
-			\dim_{\mathbb C}\mathbb C[x,y]/(F,G)= m\cdot n.
-		\end{align*}
-	Mệnh đề ($1$) là hệ quả của đẳng cấu
-	\begin{align*}
-		\varphi:\mathbb C[x,y]/(F,G)\simeq \prod_P \pazocal O_P/(F,G).
-	\end{align*}
-	Nói cách khác, {\bf\color{duongvaotoanhoc} vành tọa độ} của giao hai đường cong là tích của các vành địa phương tại mỗi giao điểm.
-	\vskip 0.1cm
-	Mệnh đề ($2$) được rút ra từ  \textbf{\color{duongvaotoanhoc}dãy khớp}  sau đây. Đặt $R:=\mathbb C[x,y]$ và $R_d$ là tập các đa thức trong $R$ với bậc $<d$.
-	Với mỗi $d\geq m+n$, dãy các ánh xạ tuyến tính sau là khớp (nghĩa là ảnh của ánh xạ trước trùng với hạch của ánh xạ sau):
-	\begin{align*}
-		0&\longrightarrow R_{d-m-n}\stackrel\beta\longrightarrow 
-		R_{d-m}\oplus R_{d-n} \stackrel\alpha\longrightarrow R_d\\
-		&\stackrel\pi\longrightarrow R/(F,G)\longrightarrow 0	
-	\end{align*}
-	trong đó  
-	\begin{align*}
-		&\alpha: (A,B)\longmapsto AF+BG,\\
-		&\beta: C\longmapsto (CG,-CF),
-	\end{align*}
-	còn $\pi$ là hạn chế của ánh xạ thương lên $R_d$. Từ đó, bằng cách so sánh số chiều ta có 
-	\begin{align*} \dim_{\mathbb C}\textrm{im}\pi=&\dim_{\mathbb C}R_d-\dim_{\mathbb C}\textrm{ker}\pi\\
-		=& \dim_{\mathbb C}R_d-\dim_{\mathbb C}\textrm{im}\alpha\\
-		=& \dim_{\mathbb C}R_d-\dim_{\mathbb C}R_{d-m}\\
-		&-\dim_{\mathbb C}R_{d-n}+ 
-		\dim_{\mathbb C}R_{d-m-n}.
-	\end{align*}
-	Do
-	\begin{align*}
-		\dim_{\mathbb C}R_k={k+1\choose 2}
-	\end{align*}
-	ta thu được 
-	\begin{align*}
-		\dim_{\mathbb C}\textrm{im}\pi=  m\cdot n.
-	\end{align*}
-	Nhận xét rằng trong các chứng minh đều xuất hiện biểu thức dạng
-	\begin{align*}
-		AF+BG.
-	\end{align*}
-	Biểu thức này rõ ràng có nguồn gốc từ khai triển Bézout cũng như liên quan tới kết thức của hai đa thức. 
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Lời cảm ơn:} Tác giả trân trọng cảm ơn TS.~Nguyễn Đăng Hợp và TS. Đào Văn Thịnh đã đọc kỹ và có nhiều góp ý giá trị giúp hoàn thiện bài viết.  
-	\vskip 0.1cm
-	\textbf{\color{duongvaotoanhoc}Tài liệu tham khảo}
-	\vskip 0.1cm
-	[$1$]  W. Fulton. {\em Algebraic curves, An Introduction to Algebraic Geometry}, $2008$.\\
-	\url{https://dept.math.lsa.umich.edu/~wfulton/CurveBook.pdf}
-	\vskip 0.1cm
-	[$2$]  A. Gathmann. {\em Plane Algebraic Curves}, TU Kaiserslautern $2018$.\\ 
-	\url{https://www.mathematik.uni-kl.de/~gathm}\\ \url{ann/class/curves-2018/curves-2018.pdf}
-	\vskip 0.1cm	
-	[$3$] Ngô Việt Trung. {\em Nhập môn Đại số Giao hoán $\&$ Hình học Đại số}, NXB Khoa học Tự nhiên và Công nghệ, $2012$.
+	Các Nghiên cứu viên Clay trước đây đã trở thành những nhà toán học hàng đầu, trong đó có nhiều nhà toán học được trao tặng Huy chương Fields như Akshay Venkatesh ($2018$), Artur Avila ($2014$), Elon Lindenstrauss ($2010$), Manjul Bhargava ($2014$), Maryam Mirzakhani ($2014$), Terence Tao ($2006$), June Huh ($2022$), James Maynard ($2022$), Peter Scholze ($2018$). Giáo sư Ngô Bảo Châu (Huy chương Fields $2010$) được trao tặng Giải thưởng Nghiên cứu Clay (Clay Research Award) năm $2004$.
 \end{multicols}
